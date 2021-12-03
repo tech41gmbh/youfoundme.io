@@ -11,7 +11,7 @@ async function login() {
   if (!user) {
    try {
       user = await Moralis.authenticate({ signingMessage: "Log into youfoundme" })
-       alert(SON.stringify(user));
+      alert(JSON.stringify(user));
       console.log(JSON.stringify(user));
       console.log(user.get('ethAddress'));
      
