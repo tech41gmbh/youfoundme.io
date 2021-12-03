@@ -10,10 +10,10 @@ async function login() {
   let user = Moralis.User.current();
   if (!user) {
    try {
-      user = await Moralis.authenticate({ signingMessage: "Log in to youfoundme" })
-       alert(user);
-      console.log(JSON.stringify(user))
-      console.log(user.get('ethAddress'))
+      user = await Moralis.authenticate({ signingMessage: "Log into youfoundme" })
+       alert(SON.stringify(user));
+      console.log(JSON.stringify(user));
+      console.log(user.get('ethAddress'));
      
    } catch(error) {
    	alert("Please enable the MetaMask plugin in your browser and activate your MetaMask wallet")
