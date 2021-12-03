@@ -12,7 +12,7 @@ async function login() {
    try {
       user = await Moralis.authenticate({ signingMessage: "Log in to youfoundme" })
        alert(user);
-      console.log(user)
+      console.log(JSON.stringify(user))
       console.log(user.get('ethAddress'))
      
    } catch(error) {
