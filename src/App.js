@@ -11,6 +11,9 @@ import {
   extendTheme,
   HStack,
   Image,
+  Table,
+  Tr,
+  Td,
 } from '@chakra-ui/react';
 
 function App() {
@@ -21,33 +24,54 @@ function App() {
         &nbsp;
       </Box>
       <HStack>
-        <Button>DApp</Button>
+        <Link href="https://app.youfoundme.io" isExternal>
+          <Button>DApp Mainet</Button>
+        </Link>
+        <Link href="https://app-dev.youfoundme.io" isExternal>
+          <Button>DApp Testnerwork</Button>
+        </Link>
         <Button>Developer</Button>
         <Button>Recruiter</Button>
         <Button>Investor</Button>
         <Button>Roadmap</Button>
       </HStack>
       <Text fontSize="4xl">Welcome to</Text>
-      <Heading fontSize="9xl">Youfoundme</Heading>
+      <Heading fontSize="8xl">Youfoundme</Heading>
       <br />
       <Box bg="black.600">
         <center>
           <Heading fontSize="3xl">
             Your Decentralized Identity for Web3 and the Metaverse
           </Heading>
+          <br /> <br />
+          <center>
+            <Table>
+              <Tr>
+                <Td>
+                  <Text>NFT & DID:</Text>
+                </Td>
+                <Td>
+                  <Image src="avatar2.png" width="90px"></Image>
+                </Td>
+                <Td>
+                  <Text>==></Text>
+                </Td>
+                <Td>
+                  <Image src="Avalanche.png" width="120px"></Image>
+                </Td>
+                <Td>
+                  <Text>==></Text>
+                </Td>
+                <Td>
+                  <Image src="id2.png" width="130px"></Image>
+                </Td>
+              </Tr>
+            </Table>
+          </center>
           <br />
-
-          <HStack>
-            <Image src="id2.png" width="200px"></Image>
-            <Text> ===> </Text>
-            <Image src="Avalanche.png" width="180px"></Image>
-            <Text>
-              Decentralized Identity <br />
-              Mint your DID <br />
-              NFT on Avalance Blockchain
-            </Text>
-          </HStack>
-
+          <Text fontSize="2xl">
+            Mint your unique DID-NFT on the Avalance Blockchain
+          </Text>
           <br />
           <Text>A DID is a globally unique Identifier </Text>
           <Text fontSize="sm" color="yellow">
@@ -73,10 +97,10 @@ function App() {
         </center>
       </Box>
       <HStack>
-        <Link href="https://app.youfoundme.io" isExtern>
+        <Link href="https://app.youfoundme.io" isExternal>
           <Button>Livenet DApp</Button>
         </Link>
-        <Link href="https://app-dev.youfoundme.io" isExtern>
+        <Link href="https://app-dev.youfoundme.io" isExternal>
           <Button>Fuji Testnet DApp</Button>
         </Link>
       </HStack>
