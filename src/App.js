@@ -33,22 +33,23 @@ function App() {
       <Box bg="black.600">
         <center>
           <Heading fontSize="3xl">
-            Your Decentraliced Identity for Web3 and the Metaverse
+            Your Decentralized Identity for Web3 and the Metaverse
           </Heading>
           <br />
 
           <HStack>
-            <Image src="cryptophine.png"></Image>
+            <Image src="id2.png" width="200px"></Image>
             <Text> ===> </Text>
-            <Image src="Avalanche.png"></Image>
+            <Image src="Avalanche.png" width="180px"></Image>
             <Text>
-              Mint your DID - Decentralized Identity
-              <br /> NFT on Avalance Blockchain
+              Decentralized Identity <br />
+              Mint your DID <br />
+              NFT on Avalance Blockchain
             </Text>
           </HStack>
 
           <br />
-          <Text>A DID is globaly unique looks like this: </Text>
+          <Text>A DID is a globally unique Identifier </Text>
           <Text fontSize="sm" color="yellow">
             did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
           </Text>
@@ -62,8 +63,8 @@ function App() {
           <Text>
             Your identity is protected with your private key and an NFT on the{' '}
             <Link href="">Avalanche blockchain</Link>. <br />
-            Stay in control. Decide woth whom you share your details. Connnect
-            to like minded users for work and play.
+            Stay in control. Decide with whom you share your details. Connnect
+            with like minded users for work and play.
             <br />
             <br />
             Logon with <Link href="">Meta Mask</Link> or{' '}
