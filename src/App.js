@@ -42,74 +42,77 @@ function App() {
             <Text> ===> </Text>
             <Image src="Avalanche.png"></Image>
             <Text>
-              Mint your NFT with your Digental Identity
-              <br /> on Avalance Blockchain
+              Mint your DID - Decentralized Identity
+              <br /> NFT on Avalance Blockchain
             </Text>
           </HStack>
 
           <br />
-          <Text>A DID looks like this: </Text>
+          <Text>A DID is globaly unique looks like this: </Text>
           <Text fontSize="sm" color="yellow">
             did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
           </Text>
           <Text>
-            and is an international standard created by{' '}
+            An international standard created by{' '}
             <Link href="https://www.w3.org/TR/did-core" isExtern>
               W3C in Geneva.
             </Link>
           </Text>
           <br />
           <Text>
-            Your identity is protected by the{' '}
-            <Link href="">Avalanche blockchain</Link> and only you can access
-            youIdentity.
+            Your identity is protected with your private key and an NFT on the{' '}
+            <Link href="">Avalanche blockchain</Link>. <br />
+            Stay in control. Decide woth whom you share your details. Connnect
+            to like minded users for work and play.
             <br />
-            Logon today using a Crypto Wallet like{' '}
-            <Link href="">Meta Mask</Link> or other Wallets using
-            <Link href="">Wallet Connect</Link>
+            <br />
+            Logon with <Link href="">Meta Mask</Link> or{' '}
+            <Link href="">Wallet Connect</Link> now:
           </Text>
         </center>
       </Box>
-
-      <br />
-      <br />
-      <Heading fontSize="4xl">Youfoundme DApp</Heading>
       <HStack>
         <Link href="https://app.youfoundme.io" isExtern>
-          <Button>Youfoundme DApp</Button>
+          <Button>Livenet DApp</Button>
         </Link>
         <Link href="https://app-dev.youfoundme.io" isExtern>
-          <Button>Youfoundme Test DApp</Button>
+          <Button>Fuji Testnet DApp</Button>
         </Link>
       </HStack>
+      <Heading fontSize="4xl">Youfoundme DApp</Heading>
       <br />
       <br />
       <Heading fontSize="4xl">Developer</Heading>
-      <Text>Coming soon: access to the youfoundme API</Text>
-      <Text>Coming soon: access to the youfoundme API</Text>
-      <br />
+      <Text>Coming soon: Access to the youfoundme REST API</Text>
+
       <br />
       <Heading fontSize="4xl">Recruiter</Heading>
       <Text>Coming soon: Recruiter Search Portal</Text>
       <br />
-      <br />
       <Heading fontSize="4xl">Investor</Heading>
       <Text>
-        We are open for funding. If you like to get in contact please message us
-        <Link> here</Link>
+        We love to talk to you. Please <Link>reach out</Link>
       </Text>
       <br />
       <br />
-      <Heading fontSize="4xl">Roadmap</Heading>
+      <Heading fontSize="4xl">Roadmap 2022+</Heading>
       <Text>oAuth2 Plugin</Text>
       <Text>Unity Plugin</Text>
       <Text>Chain Oracle</Text>
-      <Text>Metaverse Connect</Text>
       <Text>Chain Hub</Text>
+      <Text>Metaverse Connect</Text>
       <Text>Custodian Signature</Text>
       <br />
-      <br />
-      <Box width="100%" bg="black.000" minHeight="20px">
+      <Text fontSize="2xl">Many thanks to our partners and suppliers:</Text>
+
+      <HStack>
+        <Image width="100px" src="Avalanche.png"></Image>
+        <Image width="100px" src="moralis.jpg"></Image>&nbsp;&nbsp;
+        <Image width="100px" src="cloudflare.png"></Image>&nbsp;&nbsp;
+        <Image width="100px" src="readyplayerme.jpg"></Image>&nbsp;&nbsp;
+      </HStack>
+
+      <Box width="100%" minHeight="20px">
         <center>
           <br />
           <Text color="blue.500" fontSize="sm">
