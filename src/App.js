@@ -54,9 +54,6 @@ export default function App() {
   const [display, setDisplay] = useState('none');
 
   const navigate = useNavigate();
-
-  useEffect(() => {});
-
   const selectHome = () => {
     setDisplay('none');
     navigate('home');
@@ -74,9 +71,9 @@ export default function App() {
     navigate('investor');
   };
 
-  if (isDesktop) {
-    return (
-      <Flex>
+  return (
+    <Flex>
+      {isDesktop && (
         <Flex position="fixed" top="1rem" right="1rem" align="center">
           <Flex>
             <CLink
@@ -120,28 +117,8 @@ export default function App() {
             </CLink>
           </Flex>
         </Flex>
-        <Center w="100%">
-          <VStack>
-            <Heading>Welcome to</Heading>
-            <Heading fontSize="9xl">Youfoundme</Heading>
-            <Outlet />
-            <br />
-            <Container bg="black">
-              <Text fontSize="sm" color="teal.300">
-                <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
-                <a href="https://tech41.de" target="_blank">
-                  TECH41 GmbH
-                </a>
-                , Unter den Linden 24 - Berlin - Germany 2022
-              </Text>
-            </Container>
-          </VStack>
-        </Center>
-      </Flex>
-    );
-  } else {
-    return (
-      <Flex>
+      )}
+      {!isDesktop && (
         <Flex position="fixed" top="1rem" right="1rem" align="center">
           <Flex bgColor="black.50" overflowY="auto" flexDir="column">
             <Flex justify="flex-end">
@@ -199,23 +176,48 @@ export default function App() {
             </Flex>
           </Flex>
         </Flex>
-        <Center w="100%">
-          <VStack>
-            <Heading>Youfoundme</Heading>
-            <Outlet />
+      )}
+
+      <Center w="100%">
+        <VStack>
+          <Heading>Youfoundme</Heading>
+          <Outlet />
+          <br />
+          <Text> Many thanks to our partners and suppliers:</Text>
+          <HStack>
+            <CLink href="https://www.avax.network/" isExtrernal>
+              <Image
+                width="100px"
+                src="https://youfoundme.io/Avalanche.png"></Image>
+            </CLink>
+            <CLink href="https://moralis.io/" isExtrernal>
+              <Image
+                width="100px"
+                src="https://youfoundme.io/moralis.jpg"></Image>
+            </CLink>
+            <CLink href="https://www.cloudflare.com/" isExtrernal>
+              <Image
+                width="100px"
+                src="https://youfoundme.io/cloudflare.png"></Image>
+            </CLink>
+            <CLink href="https://readyplayer.me/" isExtrernal>
+              <Image
+                width="100px"
+                src="https://youfoundme.io/readyplayerme.jpg"></Image>
+            </CLink>
+          </HStack>
+          <flex bg="black">
+            <Text fontSize="xs" color="teal.300">
+              <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
+              <a href="https://tech41.de" target="_blank">
+                TECH41 GmbH
+              </a>
+              , Unter den Linden 24 - Berlin - Germany 2022
+            </Text>
             <br />
-            <Container bg="black">
-              <Text fontSize="sm" color="teal.300">
-                <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
-                <a href="https://tech41.de" target="_blank">
-                  TECH41 GmbH
-                </a>
-                , Unter den Linden 24 - Berlin - Germany 2022
-              </Text>
-            </Container>
-          </VStack>
-        </Center>
-      </Flex>
-    );
-  }
+          </flex>
+        </VStack>
+      </Center>
+    </Flex>
+  );
 }
