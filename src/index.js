@@ -1,29 +1,38 @@
 /** @format */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { render } from 'react-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
-const config = {
-  initialColorMode: 'dark',
-  useSystemColorMode: false,
-};
-const theme = extendTheme({ config });
-export default theme;
+import App from './App';
+import Home from './routes/home';
+import Developer from './routes/developer';
+import Recruiter from './routes/recruiter';
+import Investor from './routes/investor';
 
-ReactDOM.render(
+const theme = extendTheme({
+  config: {
+    initialColorMode: 'dark',
+  },
+});
+
+const rootElement = document.getElementById('root');
+
+render(
   <ChakraProvider theme={theme}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <HashRouter basename={''}>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="developer" element={<Developer />} />
+          <Route path="recruiter" element={<Recruiter />} />
+          <Route path="investor" element={<Investor />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   </ChakraProvider>,
-  document.getElementById('root')
+  rootElement
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

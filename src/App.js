@@ -1,11 +1,17 @@
 /** @format */
-import './App.css';
+
+import React, { useEffect, useState } from 'react';
+import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import {
-  Link,
+  useColorMode,
+  Center,
+  Link as CLink,
   Text,
   Heading,
   VStack,
   Button,
+  IconButton,
   Box,
   ChakraProvider,
   extendTheme,
@@ -14,143 +20,180 @@ import {
   Table,
   Tr,
   Td,
+  Menu as CHAKRAMENU,
+  MenuButton as CHAKRAMENUButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Portal,
+  Flex,
+  useDisclosure,
+  Stack,
+  Component,
+  Head,
 } from '@chakra-ui/react';
+import {
+  HamburgerIcon,
+  AddIcon,
+  ExternalLinkIcon,
+  PhoneIcon,
+  WarningIcon,
+  EditIcon,
+  RepeatIcon,
+  CloseIcon,
+  CopyIcon,
+} from '@chakra-ui/icons';
 
-function App() {
-  return (
-    <VStack>
-      <Box height="10px" bg="black.030">
-        {' '}
-        &nbsp;
-      </Box>
-      <HStack>
-        <Link href="https://app.youfoundme.io" isExternal>
-          <Button>DApp Mainet</Button>
-        </Link>
-        <Link href="https://app-dev.youfoundme.io" isExternal>
-          <Button>DApp Testnerwork</Button>
-        </Link>
-        <Button>Developer</Button>
-        <Button>Recruiter</Button>
-        <Button>Investor</Button>
-        <Button>Roadmap</Button>
-      </HStack>
-      <Text fontSize="4xl">Welcome to</Text>
-      <Heading fontSize="8xl">Youfoundme</Heading>
-      <br />
-      <Box bg="black.600">
-        <center>
-          <Heading fontSize="3xl">
-            Your Decentralized Identity for Web3 and the Metaverse
-          </Heading>
-          <br /> <br />
-          <center>
-            <Table>
-              <Tr>
-                <Td>
-                  <Text>NFT & DID:</Text>
-                </Td>
-                <Td>
-                  <Image src="avatar2.png" width="90px"></Image>
-                </Td>
-                <Td>
-                  <Text>==></Text>
-                </Td>
-                <Td>
-                  <Image src="Avalanche.png" width="120px"></Image>
-                </Td>
-                <Td>
-                  <Text>==></Text>
-                </Td>
-                <Td>
-                  <Image src="id2.png" width="130px"></Image>
-                </Td>
-              </Tr>
-            </Table>
-          </center>
-          <br />
-          <Text fontSize="2xl">
-            Mint your unique DID-NFT on the Avalance Blockchain
-          </Text>
-          <br />
-          <Text>A DID is a globally unique Identifier </Text>
-          <Text fontSize="sm" color="yellow">
-            did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
-          </Text>
-          <Text>
-            An international standard created by{' '}
-            <Link href="https://www.w3.org/TR/did-core" isExtern>
-              W3C in Geneva.
-            </Link>
-          </Text>
-          <br />
-          <Text>
-            Your identity is protected with your private key and an NFT on the{' '}
-            <Link href="">Avalanche blockchain</Link>. <br />
-            Stay in control. Decide with whom you share your details. Connnect
-            with like minded users for work and play.
-            <br />
-            <br />
-            Logon with <Link href="">Meta Mask</Link> or{' '}
-            <Link href="">Wallet Connect</Link> now:
-          </Text>
-        </center>
-      </Box>
-      <HStack>
-        <Link href="https://app.youfoundme.io" isExternal>
-          <Button>Livenet DApp</Button>
-        </Link>
-        <Link href="https://app-dev.youfoundme.io" isExternal>
-          <Button>Fuji Testnet DApp</Button>
-        </Link>
-      </HStack>
-      <Heading fontSize="4xl">Youfoundme DApp</Heading>
-      <br />
-      <br />
-      <Heading fontSize="4xl">Developer</Heading>
-      <Text>Coming soon: Access to the youfoundme REST API</Text>
+//==========================================================================================
+export default function App() {
+  const isDesktop = useMediaQuery({ query: '(min-width: 1537px)' });
+  const [display, setDisplay] = useState('none');
 
-      <br />
-      <Heading fontSize="4xl">Recruiter</Heading>
-      <Text>Coming soon: Recruiter Search Portal</Text>
-      <br />
-      <Heading fontSize="4xl">Investor</Heading>
-      <Text>
-        We love to talk to you. Please <Link>reach out</Link>
-      </Text>
-      <br />
-      <br />
-      <Heading fontSize="4xl">Roadmap 2022+</Heading>
-      <Text>oAuth2 Plugin</Text>
-      <Text>Unity Plugin</Text>
-      <Text>Chain Oracle</Text>
-      <Text>Chain Hub</Text>
-      <Text>Metaverse Connect</Text>
-      <Text>Custodian Signature</Text>
-      <br />
-      <Text fontSize="2xl">Many thanks to our partners and suppliers:</Text>
+  const navigate = useNavigate();
 
-      <HStack>
-        <Image width="100px" src="Avalanche.png"></Image>
-        <Image width="100px" src="moralis.jpg"></Image>&nbsp;&nbsp;
-        <Image width="100px" src="cloudflare.png"></Image>&nbsp;&nbsp;
-        <Image width="100px" src="readyplayerme.jpg"></Image>&nbsp;&nbsp;
-      </HStack>
+  useEffect(() => {});
 
-      <Box width="100%" minHeight="20px">
-        <center>
-          <br />
-          <Text color="blue.500" fontSize="sm">
-            youfoundme.io -{' '}
-            <Link href="https.tech41.de" isExternal>
-              TECH41 GmbH
-            </Link>
-            , Unter den Linden 24 - Berlin - Germany 2022
-          </Text>
-        </center>
-      </Box>
-    </VStack>
-  );
+  const selectHome = () => {
+    setDisplay('none');
+    navigate('home');
+  };
+  const selectDeveloper = () => {
+    setDisplay('none');
+    navigate('developer');
+  };
+  const selectRecruiter = () => {
+    setDisplay('none');
+    navigate('recruiter');
+  };
+  const selectInvestor = () => {
+    setDisplay('none');
+    navigate('investor');
+  };
+
+  if (isDesktop) {
+    return (
+      <Flex>
+        <Flex position="fixed" top="1rem" right="1rem" align="center">
+          <Flex>
+            <CLink
+              href="/#/home"
+              as="a"
+              variant="ghost"
+              aria-label="Home"
+              my={5}
+              w="100%">
+              <Button color="gray">Home</Button>
+            </CLink>
+            &nbsp;
+            <CLink
+              href="/#/developer"
+              as="a"
+              variant="ghost"
+              aria-label="Developer"
+              my={5}
+              w="100%">
+              <Button color="gray">Developer</Button>
+            </CLink>
+            &nbsp;
+            <CLink
+              href="/#/recruiter"
+              as="a"
+              variant="ghost"
+              aria-label="Recruiter"
+              my={5}
+              w="100%">
+              <Button color="gray">Recruiter</Button>
+            </CLink>
+            &nbsp;
+            <CLink
+              href="/#/investor"
+              as="a"
+              variant="ghost"
+              aria-label="Investor"
+              my={5}
+              w="100%">
+              <Button color="gray">Investor</Button>
+            </CLink>
+          </Flex>
+        </Flex>
+        <Center w="100%">
+          <VStack>
+            <Heading>Youfoundme</Heading>
+            <Outlet />
+          </VStack>
+        </Center>
+      </Flex>
+    );
+  } else {
+    return (
+      <Flex>
+        <Flex position="fixed" top="1rem" right="1rem" align="center">
+          <Flex bgColor="black.50" overflowY="auto" flexDir="column">
+            <Flex justify="flex-end">
+              <IconButton
+                icon={<HamburgerIcon />}
+                mt={2}
+                mr={2}
+                aria-label="Open Menu"
+                size="lg"
+                onClick={() => setDisplay(true)}
+              />
+            </Flex>
+            <Flex
+              display={display} // added line
+              bgColor="black.20"
+              overflowY="auto"
+              flexDir="column">
+              <Flex flexDir="column" align="center">
+                <CLink
+                  onClick={() => selectHome()}
+                  as="a"
+                  variant="ghost"
+                  aria-label="Home"
+                  w="100%">
+                  Home
+                </CLink>
+
+                <CLink
+                  onClick={() => selectDeveloper()}
+                  as="a"
+                  variant="ghost"
+                  aria-label="AboDeveloperut"
+                  w="100%">
+                  Developer
+                </CLink>
+
+                <CLink
+                  onClick={() => selectRecruiter()}
+                  as="a"
+                  variant="ghost"
+                  aria-label="Recruiter"
+                  w="100%">
+                  Recruiter
+                </CLink>
+
+                <CLink
+                  onClick={() => selectInvestor()}
+                  as="a"
+                  variant="ghost"
+                  aria-label="Investor"
+                  w="100%">
+                  Investor
+                </CLink>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Center w="100%">
+          <VStack>
+            <Heading>Youfoundme</Heading>
+            <Outlet />
+          </VStack>
+        </Center>
+      </Flex>
+    );
+  }
 }
-
-export default App;
