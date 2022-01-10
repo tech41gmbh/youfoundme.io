@@ -57,12 +57,12 @@ export default function Home() {
       <center>
         <Box bg="black.600">
           <center>
-            <Heading fontSize="3xl">
+            <Heading fontSize="2xl">
               Your Decentralized Identity for Web3 and the Metaverse
             </Heading>
             <br /> <br />
             <center>
-              <Table>
+              <Table width="85%">
                 <Tr>
                   <Td>
                     <Text>NFT & DID:</Text>
