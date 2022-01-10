@@ -87,49 +87,60 @@ export default function Home() {
             </center>
             <br />
             <Text fontSize="2xl">
-              Mint your unique DID-NFT on the Avalance Blockchain today:
+              Mint your unique DID-NFT on the Avalance Blockchain today!
             </Text>
             <Box padding="4" maxH="1xl"></Box>
             <center>
               <Link href="https://app.youfoundme.io" isExternal>
-                <Button colorScheme="blue">DApp Mainet</Button>
+                <Button colorScheme="blue">DApp Mainnet</Button>
               </Link>
               &nbsp;
               <Link href="https://app-dev.youfoundme.io" isExternal>
-                <Button colorScheme="blue">DApp Testnerwork</Button>
+                <Button colorScheme="blue">DApp Testnetwork</Button>
               </Link>
             </center>
             <br />
             <Badge borderRadius="full" px="2" colorScheme="white">
               <Box padding="2">
-                <Text>A DID is a globally unique Identifier </Text>
-                <Text fontSize="sm" color="yellow">
+                <Text color="gray.500">
+                  A DID is a globally unique Identifier like:{' '}
+                </Text>
+                <Text fontSize="xs" color="yellow.200">
                   did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
                 </Text>
-                <Text fontSize="1xl">
+                <Text color="gray.500" fontSize="1xl">
                   An international standard created by W3C Consortium in Geneva.
+                </Text>
+                <Text color="gray.500" fontSize="1xl">
+                  Youfoundme is a DID resolver backed by an extended ERC 721
+                  Token
                 </Text>
               </Box>
             </Badge>
             <br />
             <br />
             <Container borderRadius="full" px="2" colorScheme="white">
-              <Box padding="2" bg="black">
-                <Text bg="black.200">
-                  Your identity is protected with your private key and an NFT on
-                  the Avalanche blockchain. Stay in control.
-                </Text>
-              </Box>
+              <Text bg="black.200">
+                Your identity is protected with your private key and your own
+                NFT on the Avalanche blockchain. Stay in control.
+              </Text>
             </Container>
             <br />
             <Container
               bg="black"
               borderRadius="full"
+              padding="2px"
               px="2"
               colorScheme="white">
               <Text bg="black.200">
-                Decide with whom you share your details. Connnect with like
-                minded users for work and play.
+                Decide with whom you share your contact details
+                <br />
+                Logon on to W3 enabled websites and the metaverse with QR codes
+                <br />
+                Use your DID as a digital signature, like a passport or identity
+                card
+                <br />
+                Connnect with like minded users for work and play.
               </Text>
             </Container>
             <br />

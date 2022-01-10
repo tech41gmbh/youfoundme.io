@@ -48,6 +48,8 @@ import {
   CopyIcon,
 } from '@chakra-ui/icons';
 
+import WebFont from 'webfontloader';
+
 //==========================================================================================
 export default function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1537px)' });
@@ -70,6 +72,14 @@ export default function App() {
     setDisplay('none');
     navigate('investor');
   };
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Noto Sans'],
+      },
+    });
+  }, []);
 
   return (
     <Flex>
@@ -180,9 +190,11 @@ export default function App() {
 
       <Center w="100%">
         <VStack>
-          <Heading>Youfoundme</Heading>
+          <Heading>welcome to</Heading>
+          <Heading fontSize="7xl">youḟoundme</Heading>
           <Outlet />
           <br />
+
           <Text> Many thanks to our partners and suppliers:</Text>
           <HStack>
             <CLink href="https://www.avax.network/" isExtrernal>

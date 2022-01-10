@@ -8,6 +8,7 @@
     "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
+    "@fontsource/noto-sans": "^4.5.1",
     "@react-native-async-storage/async-storage": "^1.15.14",
     "@reduxjs/toolkit": "^1.6.2",
     "@rottitime/react-hook-message-event": "^1.0.8",
@@ -30,7 +31,8 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-singleton-hook": "^3.2.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -11,8 +11,13 @@ import Home from './routes/home';
 import Developer from './routes/developer';
 import Recruiter from './routes/recruiter';
 import Investor from './routes/investor';
+import '@fontsource/noto-sans/700.css';
 
 const theme = extendTheme({
+  fonts: {
+    heading: 'Noto Sans',
+    body: 'Noto Sans',
+  },
   config: {
     initialColorMode: 'dark',
   },
