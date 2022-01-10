@@ -4,7 +4,7 @@ import '../App.css';
 import {
   useColorMode,
   useMediaQuery,
-  Link,
+  Link as CLink,
   Text,
   Heading,
   VStack,
@@ -32,6 +32,7 @@ import {
   Stack,
   Component,
   Head,
+  Container,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -47,8 +48,19 @@ import {
 export default function Investor() {
   useEffect(() => {});
   return (
-    <Flex>
+    <center>
       <Heading>Investor</Heading>
-    </Flex>
+      <Container>
+        <br />
+        We like to talk with you.
+        <br /> Please contact us at:&nbsp;
+        <CLink href="mailto:investor@youfoundme.io" isExternal>
+          investor@youfundme.io
+        </CLink>
+        <br />
+        <br />
+        <Text></Text>
+      </Container>
+    </center>
   );
 }

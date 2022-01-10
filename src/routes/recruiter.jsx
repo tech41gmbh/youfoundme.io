@@ -32,6 +32,7 @@ import {
   Stack,
   Component,
   Head,
+  Container,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -49,7 +50,17 @@ export default function Recruiter() {
 
   return (
     <Flex>
-      <Heading>Recruiter</Heading>
+      <center>
+        <Heading>Recruiter</Heading>
+        <Container>
+          Coming soon:
+          <br />
+          <br />
+          <Text>
+            Recruiter Portal with additional search and bookmark features
+          </Text>
+        </Container>
+      </center>
     </Flex>
   );
 }

@@ -32,6 +32,7 @@ import {
   Stack,
   Component,
   Head,
+  Container,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -50,6 +51,17 @@ export default function Developer() {
     <Flex>
       <center>
         <Heading>Developer</Heading>
+
+        <Container>
+          Coming soon:
+          <br />
+          <br />
+          <Text>Public Youfoundme API</Text>
+          <Text>W3C DID Resolver </Text>
+          <Text>oAuth2 plugin </Text>
+          <Text>Unity plugin </Text>
+          <Text>Youfoundme Oracle</Text>
+        </Container>
       </center>
     </Flex>
   );

@@ -12,6 +12,7 @@ import {
   VStack,
   Button,
   IconButton,
+  Container,
   Box,
   ChakraProvider,
   extendTheme,
@@ -121,8 +122,19 @@ export default function App() {
         </Flex>
         <Center w="100%">
           <VStack>
-            <Heading>Youfoundme</Heading>
+            <Heading>Welcome to</Heading>
+            <Heading fontSize="9xl">Youfoundme</Heading>
             <Outlet />
+            <br />
+            <Container bg="black">
+              <Text fontSize="sm" color="teal.300">
+                <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
+                <a href="https://tech41.de" target="_blank">
+                  TECH41 GmbH
+                </a>
+                , Unter den Linden 24 - Berlin - Germany 2022
+              </Text>
+            </Container>
           </VStack>
         </Center>
       </Flex>
@@ -191,6 +203,16 @@ export default function App() {
           <VStack>
             <Heading>Youfoundme</Heading>
             <Outlet />
+            <br />
+            <Container bg="black">
+              <Text fontSize="sm" color="teal.300">
+                <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
+                <a href="https://tech41.de" target="_blank">
+                  TECH41 GmbH
+                </a>
+                , Unter den Linden 24 - Berlin - Germany 2022
+              </Text>
+            </Container>
           </VStack>
         </Center>
       </Flex>
