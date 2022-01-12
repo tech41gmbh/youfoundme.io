@@ -1,5 +1,5 @@
 /** @format */
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import '../App.css';
 import {
   useColorMode,
@@ -46,7 +46,11 @@ import {
 } from '@chakra-ui/icons';
 
 export default function Recruiter() {
-  useEffect(() => {});
+  const focusDivEMail = useRef();
+
+  useEffect(() => {
+    if (focusDivEMail.current) focusDivEMail.current.focus();
+  });
 
   return (
     <Flex>

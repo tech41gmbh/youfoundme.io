@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import {
@@ -58,6 +58,7 @@ export default function App() {
   const [email, setEmail] = React.useState('');
   const [emailOk, setEmailOk] = React.useState('');
   const [emailError, setEmailError] = React.useState('');
+  const focusDivEMail = useRef();
 
   const navigate = useNavigate();
   const selectHome = () => {
@@ -108,6 +109,8 @@ export default function App() {
         families: ['Noto Sans'],
       },
     });
+
+    if (focusDivEMail.current) focusDivEMail.current.focus();
   }, []);
 
   return (
@@ -247,11 +250,15 @@ export default function App() {
 
       <Center w="100%">
         <VStack>
+          <br />
+          <br />
+          <br />
           <Outlet margin="5px" />
 
           <Heading>News letter</Heading>
           <HStack>
             <Input
+              ref={focusDivEMail}
               width="500px"
               placeholder="email"
               fontSize="1xl"

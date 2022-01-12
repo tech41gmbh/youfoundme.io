@@ -1,5 +1,5 @@
 /** @format */
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import '../App.css';
 import {
   useColorMode,
@@ -50,17 +50,17 @@ import {
 export default function Home() {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
   const [display, changeDisplay] = useState('flex');
+  const focusDivEMail = useRef();
 
-  useEffect(() => {});
+  useEffect(() => {
+    if (focusDivEMail.current) focusDivEMail.current.focus();
+  });
 
   return (
     <Flex>
       <center>
         <Box bg="black.600">
           <center>
-            <br />
-            <br />
-            <br />
             <Heading fontSize="1xl">WELCOME TO YOUFOUNDME</Heading>
             {isMobile && (
               <span>
