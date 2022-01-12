@@ -58,6 +58,9 @@ export default function Home() {
       <center>
         <Box bg="black.600">
           <center>
+            <br />
+            <br />
+            <br />
             <Heading fontSize="1xl">WELCOME TO YOUFOUNDME</Heading>
             {isMobile && (
               <span>
@@ -81,7 +84,7 @@ export default function Home() {
                 empowering people to work and play.
               </Heading>
               <br />
-              <Table width="85%">
+              <Table width="65%">
                 <Tr>
                   <Td>
                     <Avatar src="cryptophine.png" boxSize="120px"></Avatar>
@@ -103,7 +106,7 @@ export default function Home() {
             </center>
             <br />
             <Text fontSize="2xl">
-              Mint your unique <b>DID-NFT</b> on the Avalance Blockchain today:
+              Mint your unique <b>DID-NFT</b> on Avalance Blockchain today:
             </Text>
             <Box padding="4" maxH="1xl"></Box>
             <center>
@@ -143,20 +146,20 @@ export default function Home() {
                 left="1rem"
                 align="left"
                 borderRadius="full"
-                px="2"
+                px="1"
                 colorScheme="white">
-                <Box padding={10}>
+                <Box padding={5}>
                   <Text fontSize="2xl" color="gray.500">
                     A DID is a globally unique Identifier:
                   </Text>
                   <Text fontSize="2xl" color="yellow.200">
                     did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
                   </Text>
-                  <Text fontSize="2xl" color="gray.500">
+                  <Text fontSize="1xl" color="gray.500">
                     An international standard created by W3C Consortium in
                     Geneva.
                   </Text>
-                  <Text fontSize="2xl" color="gray.500">
+                  <Text fontSize="1xl" color="gray.500">
                     Youfoundme is a DID resolver backed by an extended ERC 721
                     Token
                   </Text>
