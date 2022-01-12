@@ -246,7 +246,7 @@ export default function Home() {
               right="1rem"
               opacity="100%"
               bg="black.100"
-              padding="5">
+              padding="5px">
               <Container>
                 {isMobile && (
                   <Text align="left" fontSize="1xl" opacity="90%">
