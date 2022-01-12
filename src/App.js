@@ -114,8 +114,14 @@ export default function App() {
   }, []);
 
   return (
-    <Flex>
-      <Flex position="absolute" top="1rem" left="1rem" align="center">
+    <Flex
+      position="absolute"
+      top="5px"
+      left="5px"
+      rifht="5px"
+      //bgColor="red"
+      width={window.innerWidth}>
+      <Flex position="absolute" top="1rem" left="1rem">
         <HStack>
           <Image src="/favicon-32x32.png"></Image>
           <Heading>ƴoufoundme</Heading>
@@ -123,126 +129,118 @@ export default function App() {
       </Flex>
       {isDesktop && (
         <Flex position="absolute" top="1rem" right="1rem" align="center">
-          <Flex>
-            <CLink
-              href="/#/home"
-              as="a"
-              variant="ghost"
-              aria-label="Home"
-              my={5}
-              w="100%">
-              <Button color="gray">Home</Button>
-            </CLink>
-            &nbsp;
-            <CLink
-              href="/#/developer"
-              as="a"
-              variant="ghost"
-              aria-label="Developer"
-              my={5}
-              w="100%">
-              <Button color="gray">Developer</Button>
-            </CLink>
-            &nbsp;
-            <CLink
-              href="/#/recruiter"
-              as="a"
-              variant="ghost"
-              aria-label="Recruiter"
-              my={5}
-              w="100%">
-              <Button color="gray">Recruiter</Button>
-            </CLink>
-            &nbsp;
-            <CLink
-              href="/#/investor"
-              as="a"
-              variant="ghost"
-              aria-label="Investor"
-              my={5}
-              w="100%">
-              <Button color="gray">Investor</Button>
-            </CLink>
-          </Flex>
+          <CLink
+            href="/#/home"
+            as="a"
+            variant="ghost"
+            aria-label="Home"
+            my={5}
+            w="100%">
+            <Button color="gray">Home</Button>
+          </CLink>
+          &nbsp;
+          <CLink
+            href="/#/developer"
+            as="a"
+            variant="ghost"
+            aria-label="Developer"
+            my={5}
+            w="100%">
+            <Button color="gray">Developer</Button>
+          </CLink>
+          &nbsp;
+          <CLink
+            href="/#/recruiter"
+            as="a"
+            variant="ghost"
+            aria-label="Recruiter"
+            my={5}
+            w="100%">
+            <Button color="gray">Recruiter</Button>
+          </CLink>
+          &nbsp;
+          <CLink
+            href="/#/investor"
+            as="a"
+            variant="ghost"
+            aria-label="Investor"
+            my={5}
+            w="100%">
+            <Button color="gray">Investor</Button>
+          </CLink>
         </Flex>
       )}
       {!isDesktop && (
         <Flex
           position="absolute"
-          top="1rem"
-          right="1rem"
-          align="center"
-          z-index="-1">
+          top="1px"
+          right="2px"
+          overflowY="auto"
+          flexDir="column">
+          <Flex justify="flex-end">
+            <IconButton
+              icon={<HamburgerIcon />}
+              mt={2}
+              mr={2}
+              aria-label="Open Menu"
+              size="lg"
+              onClick={() => setDisplay(true)}
+            />
+          </Flex>
           <Flex
-            z-index="-1"
+            display={display} // added line
             bgColor="black.500"
             overflowY="auto"
             flexDir="column">
-            <Flex justify="flex-end">
-              <IconButton
-                icon={<HamburgerIcon />}
-                mt={2}
-                mr={2}
-                aria-label="Open Menu"
-                size="lg"
-                onClick={() => setDisplay(true)}
-              />
-            </Flex>
             <Flex
-              display={display} // added line
-              bgColor="black.500"
-              overflowY="auto"
-              flexDir="column">
-              <Flex
-                padding="0"
-                margin="2"
-                flexDir="column"
-                align="center"
-                bgColor="black.500">
-                <CLink
-                  onClick={() => selectHome()}
-                  as="a"
-                  variant="ghost"
-                  aria-label="Home"
-                  w="100%">
-                  <Text padding="1" bgColor="tomato" fontSize="2xl">
-                    <b>Home</b>
-                  </Text>
-                </CLink>
+              padding="0"
+              margin="2"
+              flexDir="column"
+              align="center"
+              bgColor="black.500">
+              <CLink
+                onClick={() => selectHome()}
+                as="a"
+                variant="ghost"
+                aria-label="Home"
+                w="100%">
+                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                  <b>Home</b>
+                </Text>
+              </CLink>
 
-                <CLink
-                  onClick={() => selectDeveloper()}
-                  as="a"
-                  variant="ghost"
-                  aria-label="AboDeveloperut"
-                  w="100%">
-                  <Text padding="1" bgColor="tomato" fontSize="2xl">
-                    <b>Developer</b>
-                  </Text>
-                </CLink>
+              <CLink
+                onClick={() => selectDeveloper()}
+                as="a"
+                variant="ghost"
+                aria-label="AboDeveloperut"
+                w="100%">
+                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                  <b>Developer</b>
+                </Text>
+              </CLink>
 
-                <CLink
-                  onClick={() => selectRecruiter()}
-                  as="a"
-                  variant="ghost"
-                  aria-label="Recruiter"
-                  w="100%">
-                  <Text padding="1" bgColor="tomato" fontSize="2xl">
-                    <b>Recruiter</b>
-                  </Text>
-                </CLink>
+              <CLink
+                onClick={() => selectRecruiter()}
+                as="a"
+                variant="ghost"
+                aria-label="Recruiter"
+                w="100%">
+                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                  <b>Recruiter</b>
+                </Text>
+              </CLink>
 
-                <CLink
-                  onClick={() => selectInvestor()}
-                  as="a"
-                  variant="ghost"
-                  aria-label="Investor"
-                  w="100%">
-                  <Text padding="1" bgColor="tomato" fontSize="2xl">
-                    <b>Investor</b>
-                  </Text>
-                </CLink>
-              </Flex>
+              <CLink
+                onClick={() => selectInvestor()}
+                as="a"
+                variant="ghost"
+                aria-label="Investor"
+                w="100%">
+                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                  <b>Investor</b>
+                </Text>
+              </CLink>
             </Flex>
           </Flex>
         </Flex>
@@ -320,6 +318,9 @@ export default function App() {
               the public. TECH41 GmbH does not warrant that the information
               provided by these websites is correct, complete, and up-to-date.
             </Text>
+            <br />
+            <br />
+            &nbsp;
           </flex>
         </VStack>
       </Center>
