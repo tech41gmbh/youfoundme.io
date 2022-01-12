@@ -188,7 +188,9 @@ export default function App() {
                   variant="ghost"
                   aria-label="Home"
                   w="100%">
-                  Home
+                  <Text fontSize="2xl">
+                    <b>Home</b>
+                  </Text>
                 </CLink>
 
                 <CLink
@@ -197,7 +199,9 @@ export default function App() {
                   variant="ghost"
                   aria-label="AboDeveloperut"
                   w="100%">
-                  Developer
+                  <Text fontSize="2xl">
+                    <b>Developer</b>
+                  </Text>
                 </CLink>
 
                 <CLink
@@ -206,7 +210,9 @@ export default function App() {
                   variant="ghost"
                   aria-label="Recruiter"
                   w="100%">
-                  Recruiter
+                  <Text fontSize="2xl">
+                    <b>Recruiter</b>
+                  </Text>
                 </CLink>
 
                 <CLink
@@ -215,7 +221,9 @@ export default function App() {
                   variant="ghost"
                   aria-label="Investor"
                   w="100%">
-                  Investor
+                  <Text fontSize="2xl">
+                    <b>Investor</b>
+                  </Text>
                 </CLink>
               </Flex>
             </Flex>
@@ -287,7 +295,6 @@ export default function App() {
               10117 Berlin. The contents and opinions of this website are those
               of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
               <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>
-              <br />
               TECH41 GmbH provides a cryote based Digitas Identity Solution to
               the public. TECH41 GmbH does not warrant that the information
               provided by these websites is correct, complete, and up-to-date.
