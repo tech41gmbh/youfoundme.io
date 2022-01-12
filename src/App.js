@@ -287,7 +287,7 @@ export default function App() {
               <a href="https://tech41.de" target="_blank">
                 TECH41 GmbH
               </a>
-              , Unter den Linden 24 - Berlin - Germany 2022
+              , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.1
             </Text>
             <br />
             <Text fontSize="xs">
