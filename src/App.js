@@ -127,7 +127,7 @@ export default function App() {
       position="absolute"
       top="5px"
       left="5px"
-      right="5px"
+      right="25px"
       //bgColor="red"
       width={windowsWidth}>
       <Flex position="absolute" top="1rem" left="1rem">
@@ -315,18 +315,20 @@ export default function App() {
               <a href="https://tech41.de" target="_blank">
                 TECH41 GmbH
               </a>
-              , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.2
+              , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.3
             </Text>
             <br />
-            <Text fontSize="xs">
-              This website is maintained by TECH41 GmbH, Unter den Linden 24,
-              10117 Berlin. The contents and opinions of this website are those
-              of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
-              <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>
-              TECH41 GmbH provides a cryote based Digitas Identity Solution to
-              the public. TECH41 GmbH does not warrant that the information
-              provided by these websites is correct, complete, and up-to-date.
-            </Text>
+            <Container>
+              <Text fontSize="xs">
+                This website is maintained by TECH41 GmbH, Unter den Linden 24,
+                10117 Berlin. The contents and opinions of this website are
+                those of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
+                <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>
+                TECH41 GmbH provides a cryote based Digitas Identity Solution to
+                the public. TECH41 GmbH does not warrant that the information
+                provided by these websites is correct, complete, and up-to-date.
+              </Text>
+            </Container>
             <br />
             <br />
             &nbsp;

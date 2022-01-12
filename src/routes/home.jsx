@@ -188,6 +188,7 @@ export default function Home() {
             </Badge>
             <br />
             <br />
+            <br />
             {isMobile && <Heading fontSize="5xl">How does it work?</Heading>}
             {!isMobile && <Heading fontSize="7xl">How does it work?</Heading>}
             <Flex
@@ -240,13 +241,13 @@ export default function Home() {
               <Heading fontSize="7xl">What can i use it for?</Heading>
             )}
             <Flex
-              boxSize="2xl"
+              boxSize="3xl"
               top="1rem"
               left="1rem"
               right="1rem"
-              opacity="100%"
-              bg="black.100"
-              padding="5px">
+              align="left"
+              bg="black.510"
+              padding="0">
               <Container>
                 {isMobile && (
                   <Text align="left" fontSize="1xl" opacity="90%">
