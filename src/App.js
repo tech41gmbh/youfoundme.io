@@ -259,7 +259,7 @@ export default function App() {
           <HStack>
             <Input
               ref={focusDivEMail}
-              width="500px"
+              width="300px"
               placeholder="email"
               fontSize="1xl"
               value={email}
@@ -273,31 +273,31 @@ export default function App() {
           <div id="thanks"></div>
           <br />
           <br />
-          <Heading>Thank you to our partners and suppliers</Heading>
+          <Heading>Thank you to our partners</Heading>
           <br />
           <HStack>
             <CLink href="https://www.avax.network/" isExternal>
               <Image
-                width="100px"
+                width="80px"
                 src="https://youfoundme.io/Avalanche.png"></Image>
             </CLink>
             <CLink href="https://moralis.io/" isExternal>
               <Image
-                width="100px"
+                width="80px"
                 src="https://youfoundme.io/moralis.jpg"></Image>
             </CLink>
             <CLink href="https://www.cloudflare.com/" isExternal>
               <Image
-                width="100px"
+                width="80px"
                 src="https://youfoundme.io/cloudflare.png"></Image>
             </CLink>
             <CLink href="https://readyplayer.me/" isExternal>
               <Image
-                width="100px"
+                width="80px"
                 src="https://youfoundme.io/readyplayerme.jpg"></Image>
             </CLink>
             <CLink href="https://aws.com" isExternal>
-              <Image width="100px" src="https://youfoundme.io/aws.png"></Image>
+              <Image width="80px" src="https://youfoundme.io/aws.png"></Image>
             </CLink>
           </HStack>
           <br />
