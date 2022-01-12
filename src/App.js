@@ -164,8 +164,17 @@ export default function App() {
         </Flex>
       )}
       {!isDesktop && (
-        <Flex position="absolute" top="1rem" right="1rem" align="center">
-          <Flex bgColor="black.50" overflowY="auto" flexDir="column">
+        <Flex
+          position="absolute"
+          top="1rem"
+          right="1rem"
+          align="center"
+          z-index="-1">
+          <Flex
+            z-index="-1"
+            bgColor="black.500"
+            overflowY="auto"
+            flexDir="column">
             <Flex justify="flex-end">
               <IconButton
                 icon={<HamburgerIcon />}
@@ -178,17 +187,22 @@ export default function App() {
             </Flex>
             <Flex
               display={display} // added line
-              bgColor="black.20"
+              bgColor="black.500"
               overflowY="auto"
               flexDir="column">
-              <Flex flexDir="column" align="center">
+              <Flex
+                padding="0"
+                margin="2"
+                flexDir="column"
+                align="center"
+                bgColor="black.500">
                 <CLink
                   onClick={() => selectHome()}
                   as="a"
                   variant="ghost"
                   aria-label="Home"
                   w="100%">
-                  <Text fontSize="2xl">
+                  <Text padding="1" bgColor="tomato" fontSize="2xl">
                     <b>Home</b>
                   </Text>
                 </CLink>
@@ -199,7 +213,7 @@ export default function App() {
                   variant="ghost"
                   aria-label="AboDeveloperut"
                   w="100%">
-                  <Text fontSize="2xl">
+                  <Text padding="1" bgColor="tomato" fontSize="2xl">
                     <b>Developer</b>
                   </Text>
                 </CLink>
@@ -210,7 +224,7 @@ export default function App() {
                   variant="ghost"
                   aria-label="Recruiter"
                   w="100%">
-                  <Text fontSize="2xl">
+                  <Text padding="1" bgColor="tomato" fontSize="2xl">
                     <b>Recruiter</b>
                   </Text>
                 </CLink>
@@ -221,7 +235,7 @@ export default function App() {
                   variant="ghost"
                   aria-label="Investor"
                   w="100%">
-                  <Text fontSize="2xl">
+                  <Text padding="1" bgColor="tomato" fontSize="2xl">
                     <b>Investor</b>
                   </Text>
                 </CLink>
