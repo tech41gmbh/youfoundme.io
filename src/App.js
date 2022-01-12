@@ -247,8 +247,8 @@ export default function App() {
 
       <Center w="100%">
         <VStack>
-          <br /> <br />
-          <Outlet />
+          <Outlet margin="5px" />
+
           <Heading>News letter</Heading>
           <HStack>
             <Input

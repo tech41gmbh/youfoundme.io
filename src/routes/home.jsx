@@ -59,8 +59,20 @@ export default function Home() {
         <Box bg="black.600">
           <center>
             <Heading fontSize="1xl">WELCOME TO YOUFOUNDME</Heading>
-            <Heading fontSize="7xl">Decentralized Identity</Heading>
-            <Heading fontSize="7xl">for Web3 & Metaverse.</Heading>
+            {isMobile && (
+              <span>
+                <Heading fontSize="5xl">Decentralized Identity</Heading>
+                <br />
+                <Heading fontSize="5xl">for Web3 & Metaverse.</Heading>
+              </span>
+            )}
+            {!isMobile && (
+              <span>
+                <Heading fontSize="7xl">Decentralized Identity</Heading>
+                <br />
+                <Heading fontSize="7xl">for Web3 & Metaverse.</Heading>
+              </span>
+            )}
             <br /> <br />
             <center>
               <Heading fontSize="3xl">
