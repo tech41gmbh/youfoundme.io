@@ -51,18 +51,42 @@ export default function Developer() {
     <Flex>
       <center>
         <Heading>Developer</Heading>
+        <br />
 
-        <Container>
-          Coming soon:
+        <Text>Coming soon:</Text>
+        <br />
+        <Container align="left">
+          <ul>
+            <li>
+              <Text fontSize="2xl">Developer Portal</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Public Youfoundme API</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">W3C DID Resolver </Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">oAuth2 plugin </Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Unity plugin </Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Youfoundme Oracle</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Chain Bridge</Text>
+            </li>
+          </ul>
           <br />
           <br />
-          <Text>Public Youfoundme API</Text>
-          <Text>W3C DID Resolver </Text>
-          <Text>oAuth2 plugin </Text>
-          <Text>Unity plugin </Text>
-          <Text>Youfoundme Oracle</Text>
+          <br />
+          <br />
         </Container>
       </center>
+      <br />
+      <br />
     </Flex>
   );
 }

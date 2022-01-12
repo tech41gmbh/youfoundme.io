@@ -52,14 +52,27 @@ export default function Recruiter() {
     <Flex>
       <center>
         <Heading>Recruiter</Heading>
-        <Container>
-          Coming soon:
-          <br />
-          <br />
-          <Text>
-            Recruiter Portal with additional search and bookmark features
-          </Text>
+        <br />
+
+        <Text>Coming soon:</Text>
+        <br />
+        <Container align="left">
+          <ul>
+            <li>
+              <Text fontSize="2xl">Recruiter Portal</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Extended Search</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Bookmark Features</Text>
+            </li>
+          </ul>
         </Container>
+        <br />
+        <br />
+        <br />
+        <br />
       </center>
     </Flex>
   );

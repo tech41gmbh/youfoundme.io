@@ -227,7 +227,7 @@ export default function App() {
         <VStack>
           <br /> <br />
           <Outlet />
-          <Heading>Sign up for news</Heading>
+          <Heading>News letter</Heading>
           <HStack>
             <Input
               width="500px"
@@ -266,6 +266,9 @@ export default function App() {
               <Image
                 width="100px"
                 src="https://youfoundme.io/readyplayerme.jpg"></Image>
+            </CLink>
+            <CLink href="https://aws.com" isExternal>
+              <Image width="100px" src="https://youfoundme.io/aws.png"></Image>
             </CLink>
           </HStack>
           <br />

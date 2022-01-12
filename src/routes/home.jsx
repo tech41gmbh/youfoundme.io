@@ -166,7 +166,7 @@ export default function Home() {
               padding="0">
               <Text align="left" fontSize="3xl">
                 Your digital identity is protected with your private wallet key.
-                You mint and NFT on youfoundme which we will transfer to your
+                You mint a NFT on ƴoufoundme which we will transfer to your
                 wallet. <br /> <br /> The NFT contains your Decentralized
                 Identity or DID code and also guarantees your unique username.
                 The username serves as an alias to avoid entering the DID code.
@@ -193,15 +193,15 @@ export default function Home() {
                     Sign-on effortless to Web3 enabled websites and the
                     Metaverse
                   </li>
-                  <li>Proove your identity</li>
+                  <li>Prove your identity</li>
                   <li>Create digital verifyable signatures</li>
                   <li>Create signatures as a custodian</li>
                   <li>Create signatures without need to visit a notary</li>
-                  <li>Find like minded people and exchage contact details</li>
+                  <li>Find like minded people and exchange contact details</li>
                   <li>Connect for work and play</li>
                   <li>
-                    Show referencees, achievements and projects to recuriters
-                    and investors
+                    Show references, achievements and projects to recruiters and
+                    investors
                   </li>
                   <li>Work remotely in a decentralized global community</li>
                 </ul>
