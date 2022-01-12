@@ -60,6 +60,8 @@ export default function App() {
   const [emailError, setEmailError] = React.useState('');
   const focusDivEMail = useRef();
 
+  const [windowsWidth, setWindowsWidth] = React.useState(0);
+
   const navigate = useNavigate();
   const selectHome = () => {
     setDisplay('none');
@@ -104,6 +106,12 @@ export default function App() {
   };
 
   useEffect(() => {
+    setWindowsWidth(window.innerWidth);
+    function handleResize() {
+      setWindowsWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
     WebFont.load({
       google: {
         families: ['Noto Sans'],
@@ -115,12 +123,13 @@ export default function App() {
 
   return (
     <Flex
+      bgImage="url('bg.jpg')"
       position="absolute"
       top="5px"
       left="5px"
-      rifht="5px"
+      right="5px"
       //bgColor="red"
-      width={window.innerWidth}>
+      width={windowsWidth}>
       <Flex position="absolute" top="1rem" left="1rem">
         <HStack>
           <Image src="/favicon-32x32.png"></Image>
