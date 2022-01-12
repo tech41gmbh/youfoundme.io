@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import {
+  Input,
   useColorMode,
   Center,
   Link as CLink,
@@ -47,13 +48,16 @@ import {
   CloseIcon,
   CopyIcon,
 } from '@chakra-ui/icons';
-
 import WebFont from 'webfontloader';
+import axios from 'axios';
 
 //==========================================================================================
 export default function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1537px)' });
   const [display, setDisplay] = useState('none');
+  const [email, setEmail] = React.useState('');
+  const [emailOk, setEmailOk] = React.useState('');
+  const [emailError, setEmailError] = React.useState('');
 
   const navigate = useNavigate();
   const selectHome = () => {
@@ -73,6 +77,31 @@ export default function App() {
     navigate('investor');
   };
 
+  const sendNews = async () => {
+    var pattern = new RegExp(
+      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+    );
+
+    if (!pattern.test(email)) {
+      var isValid = false;
+      setEmailOk('');
+      setEmailError('Email not valid');
+      return;
+    }
+
+    const url =
+      'https://europe-west3-thematic-flash-328716.cloudfunctions.net/storemail?email=' +
+      email;
+    let res = await axios.get(url);
+    if (res.status == 200) {
+      setEmailOk('subscribed');
+      setEmailError('');
+    } else {
+      setEmailOk('');
+      setEmailError(res.statusText);
+    }
+  };
+
   useEffect(() => {
     WebFont.load({
       google: {
@@ -83,8 +112,14 @@ export default function App() {
 
   return (
     <Flex>
+      <Flex position="absolute" top="1rem" left="1rem" align="center">
+        <HStack>
+          <Image src="/favicon-32x32.png"></Image>
+          <Heading>ƴoufoundme</Heading>
+        </HStack>
+      </Flex>
       {isDesktop && (
-        <Flex position="fixed" top="1rem" right="1rem" align="center">
+        <Flex position="absolute" top="1rem" right="1rem" align="center">
           <Flex>
             <CLink
               href="/#/home"
@@ -129,7 +164,7 @@ export default function App() {
         </Flex>
       )}
       {!isDesktop && (
-        <Flex position="fixed" top="1rem" right="1rem" align="center">
+        <Flex position="absolute" top="1rem" right="1rem" align="center">
           <Flex bgColor="black.50" overflowY="auto" flexDir="column">
             <Flex justify="flex-end">
               <IconButton
@@ -190,43 +225,70 @@ export default function App() {
 
       <Center w="100%">
         <VStack>
-          <Heading>welcome to</Heading>
-          <Heading fontSize="7xl">youḟoundme</Heading>
+          <br /> <br />
           <Outlet />
-          <br />
-
-          <Text> Many thanks to our partners and suppliers:</Text>
+          <Heading>Sign up for news</Heading>
           <HStack>
-            <CLink href="https://www.avax.network/" isExtrernal>
+            <Input
+              width="500px"
+              placeholder="email"
+              fontSize="1xl"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            &nbsp;
+            <Button onClick={sendNews}>Invite me</Button>
+          </HStack>
+          <Text color="green.500">{emailOk}</Text>
+          <Text color="red.500">{emailError}</Text>
+          <div id="thanks"></div>
+          <br />
+          <br />
+          <Heading>Thank you to our partners and suppliers</Heading>
+          <br />
+          <HStack>
+            <CLink href="https://www.avax.network/" isExternal>
               <Image
                 width="100px"
                 src="https://youfoundme.io/Avalanche.png"></Image>
             </CLink>
-            <CLink href="https://moralis.io/" isExtrernal>
+            <CLink href="https://moralis.io/" isExternal>
               <Image
                 width="100px"
                 src="https://youfoundme.io/moralis.jpg"></Image>
             </CLink>
-            <CLink href="https://www.cloudflare.com/" isExtrernal>
+            <CLink href="https://www.cloudflare.com/" isExternal>
               <Image
                 width="100px"
                 src="https://youfoundme.io/cloudflare.png"></Image>
             </CLink>
-            <CLink href="https://readyplayer.me/" isExtrernal>
+            <CLink href="https://readyplayer.me/" isExternal>
               <Image
                 width="100px"
                 src="https://youfoundme.io/readyplayerme.jpg"></Image>
             </CLink>
           </HStack>
-          <flex bg="black">
+          <br />
+          <br />
+          <flex bg="black" align="center">
             <Text fontSize="xs" color="teal.300">
-              <a href="https://youfoundme.io">youfoundme.io</a> -{' '}
+              <a href="https://youfoundme.io">ƴoufoundme.io</a> -{' '}
               <a href="https://tech41.de" target="_blank">
                 TECH41 GmbH
               </a>
               , Unter den Linden 24 - Berlin - Germany 2022
             </Text>
             <br />
+            <Text fontSize="xs">
+              This website is maintained by TECH41 GmbH, Unter den Linden 24,
+              10117 Berlin. The contents and opinions of this website are those
+              of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
+              <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>
+              <br />
+              TECH41 GmbH provides a cryote based Digitas Identity Solution to
+              the public. TECH41 GmbH does not warrant that the information
+              provided by these websites is correct, complete, and up-to-date.
+            </Text>
           </flex>
         </VStack>
       </Center>
