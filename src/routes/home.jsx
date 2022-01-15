@@ -117,7 +117,7 @@ export default function Home() {
             )}
             <Box padding="4" maxH="1xl"></Box>
             <center>
-              <Link href="https://app.youfoundme.io" isExternal>
+              <Link href="https://app.youfoundme.io">
                 <Button
                   variant="outline"
                   fontSize="3xl"
@@ -128,7 +128,7 @@ export default function Home() {
                 (~$5.00)
               </Link>
               <Box padding="4" maxH="1xl"></Box>
-              <Link href="https://testnet.youfoundme.io" isExternal>
+              <Link href="https://testnet.youfoundme.io">
                 <Button
                   variant="outline"
                   padding="4"
