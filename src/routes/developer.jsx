@@ -67,16 +67,23 @@ export default function Developer() {
               <Text fontSize="2xl">W3C DID Resolver </Text>
             </li>
             <li>
+              <Text fontSize="2xl">Resolve DID On-Chain</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Verify signatures On-Chain</Text>
+            </li>
+            <li>
               <Text fontSize="2xl">oAuth2 plugin </Text>
             </li>
             <li>
               <Text fontSize="2xl">Unity plugin </Text>
             </li>
-            <li>
-              <Text fontSize="2xl">Youfoundme Oracle</Text>
-            </li>
+
             <li>
               <Text fontSize="2xl">Chain Bridge</Text>
+            </li>
+            <li>
+              <Text fontSize="2xl">Youfoundme Oracle</Text>
             </li>
           </ul>
           <br />

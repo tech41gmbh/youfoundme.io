@@ -66,10 +66,10 @@ export default function Recruiter() {
               <Text fontSize="2xl">Recruiter Portal</Text>
             </li>
             <li>
-              <Text fontSize="2xl">Extended Search</Text>
+              <Text fontSize="2xl">Extended Search Features</Text>
             </li>
             <li>
-              <Text fontSize="2xl">Bookmark Features</Text>
+              <Text fontSize="2xl">Bookmark Candidates</Text>
             </li>
           </ul>
         </Container>

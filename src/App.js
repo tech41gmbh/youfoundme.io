@@ -59,9 +59,15 @@ export default function App() {
   const [emailOk, setEmailOk] = React.useState('');
   const [emailError, setEmailError] = React.useState('');
   const focusDivEMail = useRef();
-
   const [windowsWidth, setWindowsWidth] = React.useState(0);
 
+  const flipDisplay = () => {
+    if (display == 'none') {
+      setDisplay('true');
+    } else {
+      setDisplay('none');
+    }
+  };
   const navigate = useNavigate();
   const selectHome = () => {
     setDisplay('none');
@@ -112,13 +118,7 @@ export default function App() {
     }
 
     window.addEventListener('resize', handleResize);
-    WebFont.load({
-      google: {
-        families: ['Noto Sans'],
-      },
-    });
-
-    if (focusDivEMail.current) focusDivEMail.current.focus();
+    //if (focusDivEMail.current) focusDivEMail.current.focus();
   }, []);
 
   return (
@@ -179,6 +179,8 @@ export default function App() {
           </CLink>
         </Flex>
       )}
+
+      {/* // Mobile ================================= */}
       {!isDesktop && (
         <Flex
           position="absolute"
@@ -193,7 +195,7 @@ export default function App() {
               mr={2}
               aria-label="Open Menu"
               size="lg"
-              onClick={() => setDisplay(true)}
+              onClick={() => flipDisplay()}
             />
           </Flex>
           <Flex
@@ -256,11 +258,14 @@ export default function App() {
       )}
 
       <Center w="100%">
-        <VStack>
+        <VStack width="100%">
           <br />
           <br />
           <br />
-          <Outlet margin="5px" />
+
+          {/* ===========================================This is the main Outlet======================================== */}
+          <Outlet width="100%" margin="5px" />
+          {/* ===========================================This is the main Outlet======================================== */}
 
           <Heading>News letter</Heading>
           <HStack>

@@ -53,7 +53,7 @@ export default function Home() {
   const focusDivEMail = useRef();
 
   useEffect(() => {
-    if (focusDivEMail.current) focusDivEMail.current.focus();
+    // if (focusDivEMail.current) focusDivEMail.current.focus();
   });
 
   return (
@@ -81,7 +81,7 @@ export default function Home() {
               <Heading fontSize="3xl">
                 Ƴoufoundme is the future of security,
                 <br />
-                empowering people to work and play.
+                empowering people to work and play together.
               </Heading>
               <br />
               <Table width="65%">
@@ -125,7 +125,7 @@ export default function Home() {
                   colorScheme="blue">
                   DApp MAINNET C-CHAIN
                 </Button>{' '}
-                ($ 5.00)
+                (~$5.00)
               </Link>
               <Box padding="4" maxH="1xl"></Box>
               <Link href="https://testnet.youfoundme.io" isExternal>
@@ -145,17 +145,21 @@ export default function Home() {
             <br />
             <br />
             <Badge
+              variant="outline"
+              type="linkedin"
               bgColor="gray.900"
               borderRadius="full"
               px="1"
-              colorScheme="white">
+              colorScheme="green">
               {isMobile && (
                 <Box padding="3">
                   <Text fontSize="1xl" color="gray.500">
                     A DID is a globally unique Identifier:
                   </Text>
                   <Text fontSize="1xl" color="yellow.200">
-                    did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
+                    <pre>
+                      did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
+                    </pre>
                   </Text>
                   <Text fontSize="1xl" color="gray.500">
                     An international standard created by W3C Consortium in
@@ -173,7 +177,9 @@ export default function Home() {
                     A DID is a globally unique Identifier:
                   </Text>
                   <Text fontSize="2xl" color="yellow.200">
-                    did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
+                    <pre>
+                      did:yfm:0x44d8bf53dc61569ab2fd0099C3B9abd75cc66b33
+                    </pre>
                   </Text>
                   <Text fontSize="1xl" color="gray.500">
                     An international standard created by W3C Consortium in
@@ -235,10 +241,10 @@ export default function Home() {
               )}
             </Flex>
             {isMobile && (
-              <Heading fontSize="5xl">What can i use it for?</Heading>
+              <Heading fontSize="5xl">What can i use a DID for?</Heading>
             )}
             {!isMobile && (
-              <Heading fontSize="7xl">What can i use it for?</Heading>
+              <Heading fontSize="7xl">What can i use a DID for?</Heading>
             )}
             <Flex
               boxSize="3xl"
@@ -248,14 +254,11 @@ export default function Home() {
               align="left"
               bg="black.510"
               padding="0">
-              <Container>
+              <Container size="lg">
                 {isMobile && (
                   <Text align="left" fontSize="1xl" opacity="90%">
                     <ul>
-                      <li>
-                        Sign-on effortless to Web3 enabled websites and the
-                        Metaverse
-                      </li>
+                      <li>Sign-on effortless with QR codes</li>
                       <li>Prove your identity</li>
                       <li>Create digital verifyable signatures</li>
                       <li>Create signatures as a custodian</li>
@@ -275,29 +278,20 @@ export default function Home() {
                 {!isMobile && (
                   <Text align="left" fontSize="3xl" opacity="90%">
                     <ul>
-                      <li>
-                        Sign-on effortless to Web3 enabled websites and the
-                        Metaverse
-                      </li>
+                      <li>Sign-on effortless with QR codes</li>
                       <li>Prove your identity</li>
-                      <li>Create digital verifyable signatures</li>
+                      <li>Create verifyable signatures</li>
                       <li>Create signatures as a custodian</li>
-                      <li>Create signatures without need to visit a notary</li>
-                      <li>
-                        Find like minded people and exchange contact details
-                      </li>
+                      <li>Create ethereum signatures</li>
+                      <li>Find like minded people</li>
                       <li>Connect for work and play</li>
-                      <li>
-                        Show references, achievements and projects to recruiters
-                        and investors
-                      </li>
+                      <li>Connect to recruiters and investors</li>
                       <li>Work remotely in a decentralized global community</li>
                     </ul>
                   </Text>
                 )}
               </Container>
             </Flex>
-            <br /> <br />
             {isMobile && <Heading fontSize="5xl">Roadmap 2022+</Heading>}
             {!isMobile && <Heading fontSize="7xl">Roadmap 2022+</Heading>}
             <Flex
@@ -323,6 +317,8 @@ export default function Home() {
               </Container>
             </Flex>
           </center>
+          <br />
+          <br />
         </Box>
       </center>
     </Flex>
