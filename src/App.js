@@ -125,19 +125,42 @@ export default function App() {
     <Flex
       bgImage="url('bg.jpg')"
       position="absolute"
-      top="5px"
-      left="5px"
-      right="25px"
+      top="0px"
+      left="0px"
+      right="0px"
       //bgColor="red"
-      width={windowsWidth}>
-      <Flex position="absolute" top="1rem" left="1rem">
-        <HStack>
-          <Image src="/favicon-32x32.png"></Image>
-          <Heading>ƴoufoundme</Heading>
-        </HStack>
+      width="100%">
+      <Flex
+        position="absolute"
+        left="0"
+        right="0"
+        width="100%"
+        height="40px"
+        bgGradient="linear(to-l, #7968CA, #FF0080)"
+        bgColor="blue.800">
+        <center>
+          <CLink
+            href="/#/faq"
+            position="absolute"
+            top="5px"
+            left={windowsWidth / 2}
+            fontSize="xl"
+            color="white.100">
+            How to use Ƴoufoundme on mobile...
+          </CLink>
+        </center>
+      </Flex>
+
+      <Flex position="absolute" top="3rem" left="1rem">
+        <CLink href="https://youfoundme.io">
+          <HStack>
+            <Image src="/favicon-32x32.png"></Image>
+            <Heading>ƴoufoundme</Heading>
+          </HStack>
+        </CLink>
       </Flex>
       {isDesktop && (
-        <Flex position="absolute" top="1rem" right="1rem" align="center">
+        <Flex position="absolute" top="2rem" right="1rem" align="center">
           <CLink
             href="/#/home"
             as="a"

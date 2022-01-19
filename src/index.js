@@ -11,6 +11,7 @@ import Home from './routes/home';
 import Developer from './routes/developer';
 import Recruiter from './routes/recruiter';
 import Investor from './routes/investor';
+import Faq from './routes/faq';
 import '@fontsource/noto-sans/700.css';
 
 const theme = extendTheme({
@@ -35,6 +36,7 @@ render(
           <Route path="developer" element={<Developer />} />
           <Route path="recruiter" element={<Recruiter />} />
           <Route path="investor" element={<Investor />} />
+          <Route path="faq" element={<Faq />} />
         </Route>
       </Routes>
     </HashRouter>
