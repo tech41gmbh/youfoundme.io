@@ -32,15 +32,17 @@ export default function Home() {
         <Box bg="black.600">
           <center>
             <Heading fontSize="1xl">WELCOME TO YOUFOUNDME</Heading>
-            <Heading fontSize="4xl">Decentralized Identity</Heading>
-            <br />
-            <Heading fontSize="4xl">for Web3 & Metaverse.</Heading>
+            <Heading fontSize="4xl">
+              Decentralized Identity
+              <br />
+              for Web3 & Metaverse
+            </Heading>
             <br /> <br />
             <center>
               <Text fontSize="3xl">
-                Ƴoufoundme brings Identity to Web3 and the Metaverse,
+                Secure your identity,
                 <br />
-                empowering users to work and play together.
+                Mint your personal DID-NFT now.
               </Text>
               <br />
               <Table width="65%">
@@ -65,7 +67,7 @@ export default function Home() {
             </center>
             <br />
             <Text fontSize="1xl">
-              Mint your unique <b>DID-NFT</b> on Avalance Blockchain today:
+              Mint your unique <b>DID-NFT</b> on Avalance Blockchain:
             </Text>
             <Box padding="4" maxH="1xl"></Box>
             <center>
