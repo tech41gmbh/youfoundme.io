@@ -142,7 +142,7 @@ export default function Investor() {
           <br />
           or email us at:&nbsp;
           <CLink href="mailto:mathias.dietrich@youfoundme.io" isExternal>
-            mathias.dietrich@youfundme.io
+            mathias.dietrich@youfoundme.io
           </CLink>
           <br />
           <br />

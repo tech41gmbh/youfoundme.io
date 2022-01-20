@@ -155,7 +155,6 @@ export default function Home() {
             <Flex boxSize="2xl" align="left" bg="black.510" padding="0">
               <VStack>
                 <Heading fontSize="5xl">What can i do?</Heading>
-
                 <Box
                   padding="2"
                   align="left"
@@ -166,11 +165,10 @@ export default function Home() {
                     <ListItem>
                       Find like minded people for work and play
                     </ListItem>
-                    <ListItem>Take your avatar acrooss metaverses</ListItem>
+                    <ListItem>Take your avatar across metaverses</ListItem>
                     <ListItem>
                       Connect to recruiters and find jobs/projects
                     </ListItem>
-
                     <ListItem>
                       Establish trust effortless with QR codes
                     </ListItem>
@@ -180,7 +178,6 @@ export default function Home() {
                     <ListItem>
                       Create vouchers and custodian signatures
                     </ListItem>
-
                     <ListItem>
                       Work remotely in a decentralized global community
                     </ListItem>
