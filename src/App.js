@@ -86,6 +86,11 @@ export default function App() {
     navigate('investor');
   };
 
+  const selectFaq = () => {
+    setDisplay('none');
+    navigate('faq');
+  };
+
   const sendNews = async () => {
     var pattern = new RegExp(
       /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
@@ -136,7 +141,8 @@ export default function App() {
         right="0"
         width="100%"
         height="40px"
-        bgGradient="linear(to-l, #7968CA, #FF0080)"
+        // #7968CA
+        bgGradient="linear(to-l, #3333FF, #E84142)"
         bgColor="blue.800">
         <center>
           <CLink
@@ -200,6 +206,16 @@ export default function App() {
             w="100%">
             <Button color="gray">Investor</Button>
           </CLink>
+          &nbsp;
+          <CLink
+            href="/#/faq"
+            as="a"
+            variant="ghost"
+            aria-label="FAQ"
+            my={5}
+            w="100%">
+            <Button color="gray">FAQ</Button>
+          </CLink>
         </Flex>
       )}
 
@@ -207,7 +223,7 @@ export default function App() {
       {!isDesktop && (
         <Flex
           position="absolute"
-          top="1px"
+          top="40px"
           right="2px"
           overflowY="auto"
           flexDir="column">
@@ -275,6 +291,16 @@ export default function App() {
                   <b>Investor</b>
                 </Text>
               </CLink>
+              <CLink
+                onClick={() => selectFaq()}
+                as="a"
+                variant="ghost"
+                aria-label="FAQ"
+                w="100%">
+                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                  <b>FAQ</b>
+                </Text>
+              </CLink>
             </Flex>
           </Flex>
         </Flex>
@@ -337,30 +363,30 @@ export default function App() {
           </HStack>
           <br />
           <br />
-          <flex bg="black" align="center">
-            <Text fontSize="xs" color="teal.300">
-              <a href="https://youfoundme.io">ƴoufoundme.io</a> -{' '}
-              <a href="https://tech41.de" target="_blank">
-                TECH41 GmbH
-              </a>
-              , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.3
-            </Text>
-            <br />
-            <Container>
+
+          <Flex bg="black" align="center">
+            <VStack>
+              <Text fontSize="xs" color="teal.300">
+                <a href="https://youfoundme.io">ƴoufoundme.io</a> -{' '}
+                <a href="https://tech41.de" target="_blank">
+                  TECH41 GmbH
+                </a>
+                , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.3
+              </Text>
+
               <Text fontSize="xs">
                 This website is maintained by TECH41 GmbH, Unter den Linden 24,
                 10117 Berlin. The contents and opinions of this website are
                 those of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
-                <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>
+                <a href="mailto:info@youfoundme.io<">info@youfoundme.io</a>.
                 TECH41 GmbH provides a cryote based Digitas Identity Solution to
                 the public. TECH41 GmbH does not warrant that the information
                 provided by these websites is correct, complete, and up-to-date.
               </Text>
-            </Container>
-            <br />
-            <br />
-            &nbsp;
-          </flex>
+
+              <br />
+            </VStack>
+          </Flex>
         </VStack>
       </Center>
     </Flex>

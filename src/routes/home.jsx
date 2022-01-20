@@ -35,6 +35,8 @@ import {
   Component,
   Head,
   Container,
+  ListItem,
+  UnorderedList,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -157,9 +159,7 @@ export default function Home() {
                     A DID is a globally unique Identifier:
                   </Text>
                   <Text fontSize="1xl" color="yellow.200">
-                    <pre>
-                      did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
-                    </pre>
+                    did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
                   </Text>
                   <Text fontSize="1xl" color="gray.500">
                     An international standard created by W3C Consortium in
@@ -256,38 +256,42 @@ export default function Home() {
               padding="0">
               <Container size="lg">
                 {isMobile && (
-                  <Text align="left" fontSize="1xl" opacity="90%">
-                    <ul>
-                      <li>Sign-on effortless with QR codes</li>
-                      <li>Prove your identity</li>
-                      <li>Create digital verifyable signatures</li>
-                      <li>Create signatures as a custodian</li>
-                      <li>Create signatures without need to visit a notary</li>
-                      <li>
-                        Find like minded people and exchange contact details
-                      </li>
-                      <li>Connect for work and play</li>
-                      <li>
-                        Show references, achievements and projects to recruiters
-                        and investors
-                      </li>
-                      <li>Work remotely in a decentralized global community</li>
-                    </ul>
-                  </Text>
+                  <UnorderedList>
+                    <ListItem>Sign-on effortless with QR codes</ListItem>
+                    <ListItem>Prove your identity</ListItem>
+                    <ListItem>Create digital verifyable signatures</ListItem>
+                    <ListItem>Create signatures as a custodian</ListItem>
+                    <ListItem>
+                      Create signatures without need to visit a notary
+                    </ListItem>
+                    <ListItem>
+                      Find like minded people and exchange contact details
+                    </ListItem>
+                    <ListItem>Connect for work and play</ListItem>
+                    <ListItem>
+                      Show references, achievements and projects to recruiters
+                      and investors
+                    </ListItem>
+                    <ListItem>
+                      Work remotely in a decentralized global community
+                    </ListItem>
+                  </UnorderedList>
                 )}
                 {!isMobile && (
                   <Text align="left" fontSize="3xl" opacity="90%">
-                    <ul>
-                      <li>Sign-on effortless with QR codes</li>
-                      <li>Prove your identity</li>
-                      <li>Create verifyable signatures</li>
-                      <li>Create signatures as a custodian</li>
-                      <li>Create ethereum signatures</li>
-                      <li>Find like minded people</li>
-                      <li>Connect for work and play</li>
-                      <li>Connect to recruiters and investors</li>
-                      <li>Work remotely in a decentralized global community</li>
-                    </ul>
+                    <UnorderedList>
+                      <ListItem>Sign-on effortless with QR codes</ListItem>
+                      <ListItem>Prove your identity</ListItem>
+                      <ListItem>Create verifyable signatures</ListItem>
+                      <ListItem>Create signatures as a custodian</ListItem>
+                      <ListItem>Create ethereum signatures</ListItem>
+                      <ListItem>Find like minded people</ListItem>
+                      <ListItem>Connect for work and play</ListItem>
+                      <ListItem>Connect to recruiters and investors</ListItem>
+                      <ListItem>
+                        Work remotely in a decentralized global community
+                      </ListItem>
+                    </UnorderedList>
                   </Text>
                 )}
               </Container>
@@ -304,15 +308,15 @@ export default function Home() {
               padding="10">
               <Container>
                 <Text align="left" fontSize="2xl" opacity="90%">
-                  <ul>
-                    <li>Recruiter Portal</li>
-                    <li>oAuth2 Plugin</li>
-                    <li>Unity Plugin</li>
-                    <li>Create Digital Verifyable Signatures</li>
-                    <li>Chain Hub</li>
-                    <li>Metaverse Connect</li>
-                    <li>Custodian Signatures</li>
-                  </ul>
+                  <UnorderedList>
+                    <ListItem>Recruiter Portal</ListItem>
+                    <ListItem>oAuth2 Plugin</ListItem>
+                    <ListItem>Unity Plugin</ListItem>
+                    <ListItem>Create Digital Verifyable Signatures</ListItem>
+                    <ListItem>Chain Hub</ListItem>
+                    <ListItem>Metaverse Connect</ListItem>
+                    <ListItem>Custodian Signatures</ListItem>
+                  </UnorderedList>
                 </Text>
               </Container>
             </Flex>

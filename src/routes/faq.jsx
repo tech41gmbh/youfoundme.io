@@ -33,6 +33,7 @@ import {
   Component,
   Head,
   Container,
+  Badge,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -55,7 +56,7 @@ export default function Faq() {
         <Heading>Youfoundme on mobile</Heading>
         <br />
         <br />
-        <Text>Install MetaMask on your device:</Text>
+        <Heading>Install MetaMask on your device:</Heading>
         <CLink
           color="blue.200"
           href="https://apps.apple.com/us/app/metamask-blockchain-wallet/id1438144202"
@@ -69,21 +70,25 @@ export default function Faq() {
           isExternal>
           MetaMask Wallet for Android: Smartphones and Tablets
         </CLink>
+        {/* https://chainlist.org/ */}
         <br /> <br />
+        <Heading>Add Avalanche Fuji Testnet to MetaMask </Heading>
         <CLink
           color="blue.200"
           href="https://support.avax.network/en/articles/4626956-how-do-i-set-up-metamask-on-avalanche"
           isExternal>
           How to add a network
         </CLink>
-        <Text>Add Avalanche Fuji Testnet to MetaMask </Text>
         <pre>
           <ul color="green.200">
-            <li>Network Name: Avalanche Fuji</li>
-            <li>RPC-url: https://api.avax-test.network/ext/bc/C/rpc</li>
-            <li>ChainID: 43113</li>
-            <li>Symbol: AVAX</li>
-            <li>Block Explorer URL: https://testnet.snowtrace.io/</li>
+            a
+            <Badge>
+              <li>Network Name: Avalanche Fuji</li>
+              <li>RPC-url: https://api.avax-test.network/ext/bc/C/rpc</li>
+              <li>ChainID: 43113</li>
+              <li>Symbol: AVAX</li>
+              <li>Block Explorer URL: https://testnet.snowtrace.io/</li>
+            </Badge>
           </ul>
         </pre>
         <br />
@@ -98,7 +103,8 @@ export default function Faq() {
           </ul>
         </pre>
         <br /> <br />
-        <Text>Fund Wallet with Avax on Testnet </Text>
+        <Heading>Fund Wallet with Avax on Testnet </Heading>
+        {/* https://chainlist.org/ */}
         <CLink
           color="blue.200"
           href="https://faucet.avax-test.network/"
@@ -106,12 +112,17 @@ export default function Faq() {
           AVAX Fuji Testnet Faucet
         </CLink>
         <br /> <br />
-        <Text>Fund Wallet with Avax on Mainnet</Text>
         <br /> <br />
-        <Text>Logon to Youfoundme </Text>
-        <br /> <br />
-        <Text>Mint your NFT </Text>
+        <Heading>Fund Wallet with Avax on Mainnet</Heading>
         <br />
+        Buy Avax with Apple pay or Google Play
+        <br />
+        <br /> <br />
+        <Heading>Logon to Youfoundme </Heading>
+        <Text>Browse to youfoundme.io inside MetaMask</Text>
+        <br /> <br />
+        <Heading>Mint your NFT </Heading>
+        <br /> <br />
         <Heading>Youfoundme in your Browser</Heading>
         <Text>Install Metamask Plugin</Text>
         <CLink href="https://metamask.io/download/">Browser Plugin</CLink>

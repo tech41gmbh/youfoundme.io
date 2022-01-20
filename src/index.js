@@ -27,8 +27,8 @@ const theme = extendTheme({
 const rootElement = document.getElementById('root');
 
 render(
-  <ChakraProvider theme={theme}>
-    <HashRouter basename={''}>
+  <HashRouter basename={''}>
+    <ChakraProvider theme={theme}>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -39,7 +39,7 @@ render(
           <Route path="faq" element={<Faq />} />
         </Route>
       </Routes>
-    </HashRouter>
-  </ChakraProvider>,
+    </ChakraProvider>
+  </HashRouter>,
   rootElement
 );
