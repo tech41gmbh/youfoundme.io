@@ -79,29 +79,23 @@ export default function Faq() {
           isExternal>
           How to add a network
         </CLink>
-        <pre>
-          <ul color="green.200">
-            a
-            <Badge>
-              <li>Network Name: Avalanche Fuji</li>
-              <li>RPC-url: https://api.avax-test.network/ext/bc/C/rpc</li>
-              <li>ChainID: 43113</li>
-              <li>Symbol: AVAX</li>
-              <li>Block Explorer URL: https://testnet.snowtrace.io/</li>
-            </Badge>
-          </ul>
-        </pre>
         <br />
-        <Text>Add Avalanche Mainnet to MetaMask </Text>
-        <pre>
-          <ul color="green.200">
-            <li>Network Name: Avalanche Mainnet</li>
-            <li>RPC-url: https://api.avax.network/ext/bc/C/rpc</li>
-            <li>ChainID: 43114</li>
-            <li>Symbol: AVAX</li>
-            <li>Block Explorer URL: https://snowtrace.io/</li>
-          </ul>
-        </pre>
+        <Badge>
+          <Text>Network Name: Avalanche Fuji</Text>
+          <Text>RPC-url: https://api.avax-test.network/ext/bc/C/rpc</Text>
+          <Text>ChainID: 43113</Text>
+          <Text>Symbol: AVAX</Text>
+          <Text>Block Explorer URL: https://testnet.snowtrace.io/</Text>
+        </Badge>
+        <br />
+        <br />
+        <Badge>
+          <Text>Network Name: Avalanche Mainnet</Text>
+          <Text>RPC-url: https://api.avax.network/ext/bc/C/rpc</Text>
+          <Text>ChainID: 43114</Text>
+          <Text>Symbol: AVAX</Text>
+          <Text>Block Explorer URL: https://snowtrace.io/</Text>
+        </Badge>
         <br /> <br />
         <Heading>Fund Wallet with Avax on Testnet </Heading>
         {/* https://chainlist.org/ */}
@@ -115,27 +109,55 @@ export default function Faq() {
         <br /> <br />
         <Heading>Fund Wallet with Avax on Mainnet</Heading>
         <br />
-        Buy Avax with Apple pay or Google Play
+        Buy Avax with Apple Pay or Google Play or transfer from exchange like{' '}
+        <CLink color="blue.500" href="coinbase.com" ixExternal>
+          Coinbase{' '}
+        </CLink>
+        or{' '}
+        <CLink color="blue.500" href="https://www.kraken.com/" ixExternal>
+          {' '}
+          Kraken
+        </CLink>
+        .
         <br />
         <br /> <br />
         <Heading>Logon to Youfoundme </Heading>
-        <Text>Browse to youfoundme.io inside MetaMask</Text>
+        <Text>
+          Browse to youfoundme.io <b>inside(!)</b> MetaMask using the MetaMask
+          build in browser, go to .
+          <br />
+          <CLink color="blue.500" href="https://youfoundme.io">
+            youfoundme.io
+          </CLink>{' '}
+          and choose DApp Avalanche Mainnet or DApp Avalanche Test Network FUJI
+        </Text>
         <br /> <br />
         <Heading>Mint your NFT </Heading>
+        <br />
+        Choose the right network and user in Meta Mask
+        <br />
+        Under Me section in youfoundme register a new username. Choose carefull
+        as this can't be changed when the NFT is minted.
         <br /> <br />
-        <Heading>Youfoundme in your Browser</Heading>
-        <Text>Install Metamask Plugin</Text>
-        <CLink href="https://metamask.io/download/">Browser Plugin</CLink>
-        <Text>Fund with Avax on Testnet </Text>
-        <Text>Fund with Avax on Mainnet </Text>
-        <Text>Logon at Youfoundme </Text>
-        <Text>Mint your NFT </Text>
-        <br />
-        <br />
-        <br />
-        <br />
-        <Text>Other Resources</Text>
+        Fill out the profile and choose an Avatar image (best 400 x 400). Upload
+        an 3d Avatar or create a new on with ready player me. Save any time to
+        store your progress.
+        <br /> <br /> When you are done mint your Youfoundme DID NFT, this might
+        take a minute or two.
+        <br /> <br />
+        <Heading>Youfoundme in your Browser on Desktop</Heading>
+        <Text>Install MetaMask Plugin</Text>
+        <Text>
+          Install MetaMask as a Google Chrome Browser plugin:{' '}
+          <CLink color="blue.500" href="https://metamask.io/download/">
+            MetaMask install
+          </CLink>
+          <br />
+          <br />{' '}
+        </Text>
       </center>
+      <br />
+      <br />
     </Flex>
   );
 }

@@ -77,7 +77,51 @@ export default function Investor() {
         <br />
         <Text fontSize="2xl">
           {' '}
-          We would love to engage with you.
+          We love to engage with you.
+          <br />
+          <br />
+          <br />
+          Mission:
+          <br />
+          Youfoundme brings Identity to Web3 and Metaverse,
+          <br />
+          empowering users to work and play together.
+          <br /> <br />
+          Vision:
+          <br />
+          By 2030 youfoundme will be a catalyst for groups to operate and
+          interact with other organisations, without the need for notaries,
+          bureaucracy and expensive intermediaries.
+          <br />
+          <br />
+          Phase 1:
+          <br />
+          Career community for early adapters and developers in the Web3 space.{' '}
+          <br />
+          Connect talent in the Crypto and Metaverse space with recruiters.
+          <br />
+          <br />
+          Phase 2:
+          <br />
+          As Youfoundme scales with DID adoption we will enable users to
+          authenticate and authorise across Web3 platforms.
+          <br />
+          Proof your identity, sign-on effortlessly with QR codes, create
+          verifyable signatures and bring your avatar with you across
+          Metaverses.
+          <br /> <br />
+          Phase 3:
+          <br />
+          Allow organisations to run on trust and transperancy. Think DID
+          enabled statutes, voting, equity management and copyright protection.
+          <br /> <br />
+          Phase 4:
+          <br />
+          Empower automating trust of processes and contracts between multiple
+          organisations.
+          <br />
+          Think joint-ventures, supply chain automation and dezentralized profit
+          sharing.
           <br />
           <br /> Please contact us
         </Text>
