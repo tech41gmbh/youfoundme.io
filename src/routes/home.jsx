@@ -1,53 +1,25 @@
 /** @format */
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import {
-  useColorMode,
   useMediaQuery,
   Link,
   Text,
   Heading,
   VStack,
   Button,
-  IconButton,
   Box,
-  ChakraProvider,
-  extendTheme,
-  HStack,
   Avatar,
-  Image,
   Table,
   Tr,
   Td,
   Badge,
   Menu as CHAKRAMENU,
   MenuButton as CHAKRAMENUButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Portal,
   Flex,
-  useDisclosure,
-  Stack,
-  Component,
-  Head,
-  Container,
   ListItem,
   UnorderedList,
 } from '@chakra-ui/react';
-import {
-  HamburgerIcon,
-  AddIcon,
-  ExternalLinkIcon,
-  PhoneIcon,
-  WarningIcon,
-  EditIcon,
-  RepeatIcon,
-  CloseIcon,
-} from '@chakra-ui/icons';
 
 export default function Home() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1537px)' });
@@ -178,35 +150,41 @@ export default function Home() {
               </VStack>
               <Box height="10px" />
             </Flex>
-            <Box height="200px" />
-            <Flex
-              boxSize="3xl"
-              width="100%"
-              align="left"
-              bg="black.510"
-              padding="0">
+            <br /> <br /> <br /> <br /> <br /> <br />
+            {/* --------------------- */}
+            <Flex boxSize="2xl" align="left" bg="black.510" padding="0">
               <VStack>
-                <Heading fontSize="7xl">What can i do?</Heading>
+                <Heading fontSize="5xl">What can i do?</Heading>
 
-                <Box padding="5">
-                  <Text align="left" fontSize="2xl" opacity="100%">
-                    <UnorderedList>
-                      <ListItem>No more passwords anymore !!!</ListItem>
-                      <ListItem>
-                        Establish trust effortless with QR codes
-                      </ListItem>
-                      <ListItem>Prove your identity</ListItem>
-                      <ListItem>Create and join organisations</ListItem>
-                      <ListItem>Create verifyable crypto signatures</ListItem>
-                      <ListItem>Create signatures as a custodian</ListItem>
-                      <ListItem>Find like minded people</ListItem>
-                      <ListItem>Connect for work and play</ListItem>
-                      <ListItem>Connect to recruiters and investors</ListItem>
-                      <ListItem>
-                        Work remotely in a decentralized global community
-                      </ListItem>
-                    </UnorderedList>
-                  </Text>
+                <Box
+                  padding="2"
+                  align="left"
+                  borderRadius="md"
+                  backgroundColor="blue.800">
+                  <UnorderedList align="left" fontSize="2xl">
+                    <ListItem>Sign on without passwords</ListItem>
+                    <ListItem>
+                      Find like minded people for work and play
+                    </ListItem>
+                    <ListItem>Take your avatar acrooss metaverses</ListItem>
+                    <ListItem>
+                      Connect to recruiters and find jobs/projects
+                    </ListItem>
+
+                    <ListItem>
+                      Establish trust effortless with QR codes
+                    </ListItem>
+                    <ListItem>Own and prove your identity</ListItem>
+                    <ListItem>Create and join organisations</ListItem>
+                    <ListItem>Create verifyable crypto signatures</ListItem>
+                    <ListItem>
+                      Create vouchers and custodian signatures
+                    </ListItem>
+
+                    <ListItem>
+                      Work remotely in a decentralized global community
+                    </ListItem>
+                  </UnorderedList>
                 </Box>
               </VStack>
             </Flex>

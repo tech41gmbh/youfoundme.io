@@ -223,7 +223,7 @@ export default function App() {
                 variant="ghost"
                 aria-label="Home"
                 w="100%">
-                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                <Text padding="1" bgColor="blue.800" fontSize="2xl">
                   <b>Home</b>
                 </Text>
               </CLink>
@@ -234,7 +234,7 @@ export default function App() {
                 variant="ghost"
                 aria-label="AboDeveloperut"
                 w="100%">
-                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                <Text padding="1" bgColor="blue.800" fontSize="2xl">
                   <b>Developer</b>
                 </Text>
               </CLink>
@@ -245,7 +245,7 @@ export default function App() {
                 variant="ghost"
                 aria-label="Recruiter"
                 w="100%">
-                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                <Text padding="1" bgColor="blue.800" fontSize="2xl">
                   <b>Recruiter</b>
                 </Text>
               </CLink>
@@ -256,7 +256,7 @@ export default function App() {
                 variant="ghost"
                 aria-label="Investor"
                 w="100%">
-                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                <Text padding="1" bgColor="blue.800" fontSize="2xl">
                   <b>Investor</b>
                 </Text>
               </CLink>
@@ -266,7 +266,7 @@ export default function App() {
                 variant="ghost"
                 aria-label="FAQ"
                 w="100%">
-                <Text padding="1" bgColor="tomato" fontSize="2xl">
+                <Text padding="1" bgColor="blue.800" fontSize="2xl">
                   <b>FAQ</b>
                 </Text>
               </CLink>
