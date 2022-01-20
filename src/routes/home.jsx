@@ -39,8 +39,10 @@ export default function Home() {
             </Heading>
             <br /> <br />
             <center>
-              <Text fontSize="3xl">Youfoundme digital signatures:</Text>
-              <Text fontSize="3xl">Get your DID-NFT !</Text>
+              <Text fontSize="4xl">Youfoundme digital signatures:</Text>
+              <Text color="tomato" fontSize="4xl">
+                Get your DID-NFT now !
+              </Text>
               <br />
               <Table width="65%">
                 <Tr>
@@ -164,6 +166,9 @@ export default function Home() {
                     <ListItem>
                       Find like minded people for work and play
                     </ListItem>
+                    <ListItem>
+                      Work remotely in a decentralized global community
+                    </ListItem>
                     <ListItem>Take your avatar across metaverses</ListItem>
                     <ListItem>
                       Connect to recruiters and find jobs/projects
@@ -173,17 +178,30 @@ export default function Home() {
                     </ListItem>
                     <ListItem>Own and prove your identity</ListItem>
                     <ListItem>Create and join organisations</ListItem>
-                    <ListItem>Create verifyable crypto signatures</ListItem>
+                    <ListItem>
+                      Create Verifyable Credentials{' '}
+                      <Link
+                        fontSize="sm"
+                        color="blue.500"
+                        href="https://www.w3.org/TR/vc-data-model/"
+                        isExternal>
+                        (W3C v1.1)
+                      </Link>
+                    </ListItem>
                     <ListItem>
                       Create vouchers and custodian signatures
                     </ListItem>
-                    <ListItem>
-                      Work remotely in a decentralized global community
-                    </ListItem>
                   </UnorderedList>
                 </Box>
+                <Box height="50px" />
+                <Text color="tomato" fontSize="4xl">
+                  Youfoundme Decentralized Identity!
+                  <br />
+                  Welcome to the Future of Digital Identity Management.
+                </Text>
               </VStack>
             </Flex>
+            <br /> <br />
             <Flex
               boxSize="2xl"
               width="100%"
@@ -215,6 +233,10 @@ export default function Home() {
                     </UnorderedList>
                   </Text>
                 </Box>
+                <Text color="tomato" fontSize="4xl">
+                  Own your identity for
+                  <br /> Web3 and Metaverse
+                </Text>
               </VStack>
             </Flex>
           </center>

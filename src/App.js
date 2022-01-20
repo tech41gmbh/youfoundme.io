@@ -121,7 +121,7 @@ export default function App() {
             left={windowsWidth / 4}
             fontSize="xl"
             color="white.100">
-            Use youfoundme on mobile? =>
+            Using ƴoufoundme on mobile? =>
           </CLink>
         </center>
       </Flex>
@@ -285,17 +285,19 @@ export default function App() {
           <Outlet width="100%" margin="5px" />
           {/* ===========================================This is the main Outlet======================================== */}
 
-          <Heading>News letter</Heading>
+          <Heading>Stay up to date</Heading>
           <HStack>
             <Input
               width="300px"
-              placeholder="email"
+              placeholder="subscribe me email"
               fontSize="1xl"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             &nbsp;
-            <Button onClick={sendNews}>Invite me</Button>
+            <Button onClick={sendNews} color="tomato">
+              Invite me
+            </Button>
           </HStack>
           <Text color="green.500">{emailOk}</Text>
           <Text color="red.500">{emailError}</Text>
