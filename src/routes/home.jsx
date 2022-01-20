@@ -39,11 +39,8 @@ export default function Home() {
             </Heading>
             <br /> <br />
             <center>
-              <Text fontSize="3xl">
-                Secure your identity,
-                <br />
-                Mint your personal DID-NFT.
-              </Text>
+              <Text fontSize="3xl">Youfoundme digital signatures:</Text>
+              <Text fontSize="3xl">Get your DID-NFT !</Text>
               <br />
               <Table width="65%">
                 <Tr>
