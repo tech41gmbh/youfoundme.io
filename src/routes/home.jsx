@@ -50,13 +50,9 @@ import {
 } from '@chakra-ui/icons';
 
 export default function Home() {
-  const [isMobile] = useMediaQuery('(max-width: 768px)');
-  const [display, changeDisplay] = useState('flex');
-  const focusDivEMail = useRef();
+  const isDesktop = useMediaQuery({ query: '(min-width: 1537px)' });
 
-  useEffect(() => {
-    // if (focusDivEMail.current) focusDivEMail.current.focus();
-  });
+  useEffect(() => {});
 
   return (
     <Flex>
@@ -64,27 +60,16 @@ export default function Home() {
         <Box bg="black.600">
           <center>
             <Heading fontSize="1xl">WELCOME TO YOUFOUNDME</Heading>
-            {isMobile && (
-              <span>
-                <Heading fontSize="5xl">Decentralized Identity</Heading>
-                <br />
-                <Heading fontSize="5xl">for Web3 & Metaverse.</Heading>
-              </span>
-            )}
-            {!isMobile && (
-              <span>
-                <Heading fontSize="7xl">Decentralized Identity</Heading>
-                <br />
-                <Heading fontSize="7xl">for Web3 & Metaverse.</Heading>
-              </span>
-            )}
+            <Heading fontSize="4xl">Decentralized Identity</Heading>
+            <br />
+            <Heading fontSize="4xl">for Web3 & Metaverse.</Heading>
             <br /> <br />
             <center>
-              <Heading fontSize="3xl">
-                Ƴoufoundme is the future of security,
+              <Text fontSize="3xl">
+                Ƴoufoundme brings Identity to Web3 and the Metaverse,
                 <br />
-                empowering people to work and play together.
-              </Heading>
+                empowering users to work and play together.
+              </Text>
               <br />
               <Table width="65%">
                 <Tr>
@@ -107,16 +92,9 @@ export default function Home() {
               </Table>
             </center>
             <br />
-            {isMobile && (
-              <Text fontSize="1xl">
-                Mint your unique <b>DID-NFT</b> on Avalance Blockchain today:
-              </Text>
-            )}
-            {!isMobile && (
-              <Text>
-                Mint your unique <b>DID-NFT</b> on Avalance Blockchain today:
-              </Text>
-            )}
+            <Text fontSize="1xl">
+              Mint your unique <b>DID-NFT</b> on Avalance Blockchain today:
+            </Text>
             <Box padding="4" maxH="1xl"></Box>
             <center>
               <Link href="https://app.youfoundme.io">
@@ -153,138 +131,74 @@ export default function Home() {
               borderRadius="full"
               px="1"
               colorScheme="green">
-              {isMobile && (
-                <Box padding="3">
-                  <Text fontSize="1xl" color="gray.500">
-                    A DID is a globally unique Identifier:
-                  </Text>
-                  <Text fontSize="1xl" color="yellow.200">
-                    did:yfm:0x44D8BF53dc61569aB2fd0099C3B9abd75Cc66b33
-                  </Text>
-                  <Text fontSize="1xl" color="gray.500">
-                    An international standard created by W3C Consortium in
-                    Geneva.
-                  </Text>
-                  <Text fontSize="1xl" color="gray.500">
-                    Youfoundme is a DID resolver backed by an extended ERC 721
-                    Token
-                  </Text>
-                </Box>
-              )}
-              {!isMobile && (
-                <Box padding="5">
-                  <Text fontSize="2xl" color="gray.500">
-                    A DID is a globally unique Identifier:
-                  </Text>
-                  <Text fontSize="2xl" color="yellow.200">
-                    <pre>
-                      did:yfm:0x44d8bf53dc61569ab2fd0099C3B9abd75cc66b33
-                    </pre>
-                  </Text>
-                  <Text fontSize="1xl" color="gray.500">
-                    An international standard created by W3C Consortium in
-                    Geneva.
-                  </Text>
-                  <Text fontSize="1xl" color="gray.500">
-                    Youfoundme is a DID resolver backed by an extended ERC 721
-                    Token
-                  </Text>
-                </Box>
-              )}
+              <Box padding="5">
+                <Text fontSize="2xl" color="gray.500">
+                  A DID is a globally unique Identifier:
+                </Text>
+                <Text fontSize="2xl" color="yellow.200">
+                  <pre>did:yfm:0x44d8bf53dc61569ab2fd0099C3B9abd75cc66b33</pre>
+                </Text>
+                <Text fontSize="1xl" color="gray.500">
+                  An international standard created by W3C Consortium in Geneva.
+                </Text>
+                <Text fontSize="1xl" color="gray.500">
+                  Youfoundme is a DID resolver backed by an extended ERC 721
+                  Token
+                </Text>
+              </Box>
             </Badge>
             <br />
             <br />
-            <br />
-            {isMobile && <Heading fontSize="5xl">How does it work?</Heading>}
-            {!isMobile && <Heading fontSize="7xl">How does it work?</Heading>}
-            <Flex
-              boxSize="3xl"
-              top="1rem"
-              left="1rem"
-              right="1rem"
-              align="left"
-              bg="black.510"
-              padding="0">
-              {isMobile && (
-                <Container>
-                  <Text align="left" fontSize="1xl">
+            <Flex boxSize="2xl" align="left" bg="black.510" padding="0">
+              <VStack>
+                <Heading fontSize="5xl">How does it work?</Heading>
+
+                <Box padding="2" borderRadius="md" backgroundColor="blue.800">
+                  <Text align="left" fontSize="2xl">
+                    <br />
                     Your digital identity is protected with your private wallet
-                    key. You mint a NFT on ƴoufoundme which we will transfer to
-                    your wallet. <br /> <br /> The NFT contains your
-                    Decentralized Identity or DID code and also guarantees your
-                    unique username. The username serves as an alias to avoid
-                    entering the DID code.
+                    key. You mint your NFT with our ƴoufoundme DApp and we will
+                    transfer your NFT to your wallet. <br /> <br /> The NFT
+                    contains your Decentralized Identity or DID identifier and
+                    also guarantees your unique username. Your username serves
+                    as an alias, no need to enter the DID code manually. You can
+                    also use query codes to share with your friends.
                     <br /> <br />
-                    Your contact details are not visible on the public
+                    Your contact details are not visible on the public web or
                     blockchain. You control with whom you share your details.
+                    You use the connect button to link with another user for
+                    access.
                     <br /> <br />
-                    If you change contact details permissioned users will
-                    automatically see the latest version.
+                    If you update your contact details permissioned users will
+                    automatically see the updated version. No more outdated
+                    mobile numbers or email addresses!
                   </Text>
-                </Container>
-              )}
-              {!isMobile && (
-                <Text align="left" fontSize="3xl">
-                  Your digital identity is protected with your private wallet
-                  key. You mint a NFT on ƴoufoundme which we will transfer to
-                  your wallet. <br /> <br /> The NFT contains your Decentralized
-                  Identity or DID code and also guarantees your unique username.
-                  The username serves as an alias to avoid entering the DID
-                  code.
-                  <br /> <br />
-                  Your contact details are not visible on the public blockchain.
-                  You control with whom you share your details.
-                  <br /> <br />
-                  If you change contact details permissioned users will
-                  automatically see the latest version.
-                </Text>
-              )}
+                </Box>
+                <Box height="10px" />
+              </VStack>
+              <Box height="10px" />
             </Flex>
-            {isMobile && (
-              <Heading fontSize="5xl">What can i use a DID for?</Heading>
-            )}
-            {!isMobile && (
-              <Heading fontSize="7xl">What can i use a DID for?</Heading>
-            )}
+            <Box height="200px" />
             <Flex
               boxSize="3xl"
-              top="1rem"
-              left="1rem"
-              right="1rem"
+              width="100%"
               align="left"
               bg="black.510"
               padding="0">
-              <Container size="lg">
-                {isMobile && (
-                  <UnorderedList>
-                    <ListItem>Sign-on effortless with QR codes</ListItem>
-                    <ListItem>Prove your identity</ListItem>
-                    <ListItem>Create digital verifyable signatures</ListItem>
-                    <ListItem>Create signatures as a custodian</ListItem>
-                    <ListItem>
-                      Create signatures without need to visit a notary
-                    </ListItem>
-                    <ListItem>
-                      Find like minded people and exchange contact details
-                    </ListItem>
-                    <ListItem>Connect for work and play</ListItem>
-                    <ListItem>
-                      Show references, achievements and projects to recruiters
-                      and investors
-                    </ListItem>
-                    <ListItem>
-                      Work remotely in a decentralized global community
-                    </ListItem>
-                  </UnorderedList>
-                )}
-                {!isMobile && (
-                  <Text align="left" fontSize="3xl" opacity="90%">
+              <VStack>
+                <Heading fontSize="7xl">What can i do?</Heading>
+
+                <Box padding="5">
+                  <Text align="left" fontSize="2xl" opacity="100%">
                     <UnorderedList>
-                      <ListItem>Sign-on effortless with QR codes</ListItem>
+                      <ListItem>No more passwords anymore !!!</ListItem>
+                      <ListItem>
+                        Establish trust effortless with QR codes
+                      </ListItem>
                       <ListItem>Prove your identity</ListItem>
-                      <ListItem>Create verifyable signatures</ListItem>
+                      <ListItem>Create and join organisations</ListItem>
+                      <ListItem>Create verifyable crypto signatures</ListItem>
                       <ListItem>Create signatures as a custodian</ListItem>
-                      <ListItem>Create ethereum signatures</ListItem>
                       <ListItem>Find like minded people</ListItem>
                       <ListItem>Connect for work and play</ListItem>
                       <ListItem>Connect to recruiters and investors</ListItem>
@@ -293,36 +207,43 @@ export default function Home() {
                       </ListItem>
                     </UnorderedList>
                   </Text>
-                )}
-              </Container>
+                </Box>
+              </VStack>
             </Flex>
-            {isMobile && <Heading fontSize="5xl">Roadmap 2022+</Heading>}
-            {!isMobile && <Heading fontSize="7xl">Roadmap 2022+</Heading>}
             <Flex
-              boxSize="1xl"
-              top="1rem"
-              left="1rem"
-              right="1rem"
-              opacity="100%"
-              bg="black.100"
-              padding="10">
-              <Container>
-                <Text align="left" fontSize="2xl" opacity="90%">
-                  <UnorderedList>
-                    <ListItem>Recruiter Portal</ListItem>
-                    <ListItem>oAuth2 Plugin</ListItem>
-                    <ListItem>Unity Plugin</ListItem>
-                    <ListItem>Create Digital Verifyable Signatures</ListItem>
-                    <ListItem>Chain Hub</ListItem>
-                    <ListItem>Metaverse Connect</ListItem>
-                    <ListItem>Custodian Signatures</ListItem>
-                  </UnorderedList>
-                </Text>
-              </Container>
+              boxSize="2xl"
+              width="100%"
+              align="left"
+              bg="black.510"
+              padding="0">
+              <VStack>
+                <Heading fontSize="7xl">Roadmap 2022+</Heading>
+                <Box padding="5">
+                  <Text align="left" fontSize="2xl" opacity="90%">
+                    <UnorderedList>
+                      <ListItem>IoS and Android App</ListItem>
+                      <ListItem>Recruiter Portal</ListItem>
+                      <ListItem>oAuth2 Bridge</ListItem>
+                      <ListItem>Unity Support</ListItem>
+                      <ListItem>Create Digital Verifyable Signatures</ListItem>
+                      <ListItem>Chain Hub</ListItem>
+                      <ListItem>Metaverse Connect</ListItem>
+                      <ListItem>Custodian Signatures</ListItem>
+                      <ListItem>
+                        What do you like to see? Contact us at:{' '}
+                        <Link
+                          color="blue.500"
+                          href="mailto:info@youfoundme.io"
+                          isExternal>
+                          info@youfoundme.io
+                        </Link>
+                      </ListItem>
+                    </UnorderedList>
+                  </Text>
+                </Box>
+              </VStack>
             </Flex>
           </center>
-          <br />
-          <br />
         </Box>
       </center>
     </Flex>

@@ -5,7 +5,6 @@ import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import {
   Input,
-  useColorMode,
   Center,
   Link as CLink,
   Text,
@@ -13,42 +12,13 @@ import {
   VStack,
   Button,
   IconButton,
-  Container,
-  Box,
-  ChakraProvider,
-  extendTheme,
   HStack,
   Image,
-  Table,
-  Tr,
-  Td,
   Menu as CHAKRAMENU,
   MenuButton as CHAKRAMENUButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Portal,
   Flex,
-  useDisclosure,
-  Stack,
-  Component,
-  Head,
 } from '@chakra-ui/react';
-import {
-  HamburgerIcon,
-  AddIcon,
-  ExternalLinkIcon,
-  PhoneIcon,
-  WarningIcon,
-  EditIcon,
-  RepeatIcon,
-  CloseIcon,
-  CopyIcon,
-} from '@chakra-ui/icons';
-import WebFont from 'webfontloader';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import axios from 'axios';
 
 //==========================================================================================
@@ -133,7 +103,6 @@ export default function App() {
       top="0px"
       left="0px"
       right="0px"
-      //bgColor="red"
       width="100%">
       <Flex
         position="absolute"
@@ -149,10 +118,10 @@ export default function App() {
             href="/#/faq"
             position="absolute"
             top="5px"
-            left={windowsWidth / 2}
+            left={windowsWidth / 4}
             fontSize="xl"
             color="white.100">
-            How to use Ƴoufoundme on mobile...
+            On mobile? =>
           </CLink>
         </center>
       </Flex>
@@ -319,7 +288,6 @@ export default function App() {
           <Heading>News letter</Heading>
           <HStack>
             <Input
-              ref={focusDivEMail}
               width="300px"
               placeholder="email"
               fontSize="1xl"
@@ -331,7 +299,7 @@ export default function App() {
           </HStack>
           <Text color="green.500">{emailOk}</Text>
           <Text color="red.500">{emailError}</Text>
-          <div id="thanks"></div>
+          <Text id="thanks"></Text>
           <br />
           <br />
           <Heading>Thank you to our partners</Heading>
@@ -363,18 +331,17 @@ export default function App() {
           </HStack>
           <br />
           <br />
-
           <Flex bg="black" align="center">
             <VStack>
               <Text fontSize="xs" color="teal.300">
-                <a href="https://youfoundme.io">ƴoufoundme.io</a> -{' '}
-                <a href="https://tech41.de" target="_blank">
+                <CLink href="https://youfoundme.io">ƴoufoundme.io</CLink> -{' '}
+                <CLink href="https://tech41.de" target="_blank">
                   TECH41 GmbH
-                </a>
+                </CLink>
                 , Unter den Linden 24 - Berlin - Germany 2022 - v.1.0.3
               </Text>
 
-              <Text fontSize="xs">
+              <Text fontSize="xs" color="gray.600">
                 This website is maintained by TECH41 GmbH, Unter den Linden 24,
                 10117 Berlin. The contents and opinions of this website are
                 those of TECH41 GmbH. General Manager: Mathias Dietrich{' '}
@@ -383,7 +350,6 @@ export default function App() {
                 the public. TECH41 GmbH does not warrant that the information
                 provided by these websites is correct, complete, and up-to-date.
               </Text>
-
               <br />
             </VStack>
           </Flex>
