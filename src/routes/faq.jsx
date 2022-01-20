@@ -109,7 +109,7 @@ export default function Faq() {
         <br /> <br />
         <Heading>Fund Wallet with Avax on Mainnet</Heading>
         <br />
-        Buy Avax with Apple Pay or Google Play or transfer from exchange like{' '}
+        Buy Avax with Apple Pay or Google Play or transfer from exchanges like{' '}
         <CLink color="blue.500" href="coinbase.com" ixExternal>
           Coinbase{' '}
         </CLink>
@@ -121,7 +121,7 @@ export default function Faq() {
         .
         <br />
         <br /> <br />
-        <Heading>Logon to Youfoundme </Heading>
+        <Heading>Logon to Youfoundme on mobile</Heading>
         <Text>
           Use Youfoundme <b>inside(!)</b> MetaMask using the MetaMask build-in
           web browser, go to
