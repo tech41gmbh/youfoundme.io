@@ -61,6 +61,11 @@ export default function Developer() {
               <Text fontSize="2xl">Developer Portal</Text>
             </li>
             <li>
+              <Text fontSize="2xl">
+                How to query the Youfoundme ERC-721 contract
+              </Text>
+            </li>
+            <li>
               <Text fontSize="2xl">Public Youfoundme API</Text>
             </li>
             <li>

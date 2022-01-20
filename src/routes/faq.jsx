@@ -123,27 +123,27 @@ export default function Faq() {
         <br /> <br />
         <Heading>Logon to Youfoundme </Heading>
         <Text>
-          Browse to youfoundme.io <b>inside(!)</b> MetaMask using the MetaMask
-          build in browser, go to .
+          Use Youfoundme <b>inside(!)</b> MetaMask using the MetaMask build-in
+          web browser, go to
           <br />
           <CLink color="blue.500" href="https://youfoundme.io">
             youfoundme.io
           </CLink>{' '}
-          and choose DApp Avalanche Mainnet or DApp Avalanche Test Network FUJI
+          and choose our DApp on Avalanche Mainnet or DApp Avalanche Test
+          Network FUJI.
         </Text>
         <br /> <br />
         <Heading>Mint your NFT </Heading>
         <br />
-        Choose the right network and user in Meta Mask
+        Choose the right network and user in Meta Mask.
         <br />
-        Under Me section in youfoundme register a new username. Choose carefull
+        Under Me section in youfoundme register a new username. Choose carefully
         as this can't be changed when the NFT is minted.
         <br /> <br />
-        Fill out the profile and choose an Avatar image (best 400 x 400). Upload
-        an 3d Avatar or create a new on with ready player me. Save any time to
-        store your progress.
-        <br /> <br /> When you are done mint your Youfoundme DID NFT, this might
-        take a minute or two.
+        Fill out your profile and choose an Avatar image (best 400 x 400).
+        Upload a 3d Avatar or create a new one with ready player me.
+        <br /> <br /> When you are ready mint your Youfoundme DID NFT, this
+        might take a minute or two.
         <br /> <br />
         <Heading>Youfoundme in your Browser on Desktop</Heading>
         <Text>Install MetaMask Plugin</Text>

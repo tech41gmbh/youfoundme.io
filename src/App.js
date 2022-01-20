@@ -121,7 +121,7 @@ export default function App() {
             left={windowsWidth / 4}
             fontSize="xl"
             color="white.100">
-            On mobile? =>
+            Use youfoundme on mobile? =>
           </CLink>
         </center>
       </Flex>
