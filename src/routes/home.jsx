@@ -42,7 +42,7 @@ export default function Home() {
               <Text fontSize="3xl">
                 Secure your identity,
                 <br />
-                Mint your personal DID-NFT now.
+                Mint your personal DID-NFT.
               </Text>
               <br />
               <Table width="65%">
@@ -67,7 +67,7 @@ export default function Home() {
             </center>
             <br />
             <Text fontSize="1xl">
-              Mint your unique <b>DID-NFT</b> on Avalance Blockchain:
+              Mint your unique <b>DID-NFT</b> on Avalanche Blockchain:
             </Text>
             <Box padding="4" maxH="1xl"></Box>
             <center>
