@@ -174,7 +174,7 @@ export default function Home() {
                       Connect to recruiters and find jobs/projects
                     </ListItem>
                     <ListItem>
-                      Establish trust effortless with QR codes
+                      Establish trust effortlessly with QR codes
                     </ListItem>
                     <ListItem>Own and prove your identity</ListItem>
                     <ListItem>Create and join organisations</ListItem>
@@ -234,8 +234,8 @@ export default function Home() {
                   </Text>
                 </Box>
                 <Text color="tomato" fontSize="4xl">
-                  Own your identity for
-                  <br /> Web3 and Metaverse
+                  Own your Identity in
+                  <br /> Web3 and the Metaverse
                 </Text>
               </VStack>
             </Flex>
