@@ -73,6 +73,7 @@ export default function App() {
       return;
     }
 
+    // this is Google GCP
     const url =
       'https://europe-west3-thematic-flash-328716.cloudfunctions.net/storemail?email=' +
       email;

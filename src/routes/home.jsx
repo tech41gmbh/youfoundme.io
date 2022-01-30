@@ -120,8 +120,16 @@ export default function Home() {
                 </Text>
               </Box>
             </Badge>
-            <br />
-            <br />
+            <Box height="50px" />
+            <iframe
+              width="680"
+              height="500"
+              src="https://www.youtube.com/embed/FZHMTbHqM_w"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <Box height="50px" />
             <Flex boxSize="2xl" align="left" bg="black.510" padding="0">
               <VStack>
                 <Heading fontSize="5xl">How does it work?</Heading>
