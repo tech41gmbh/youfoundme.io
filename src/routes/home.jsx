@@ -187,7 +187,7 @@ export default function Home() {
                     <ListItem>Own and prove your identity</ListItem>
                     <ListItem>Create and join organisations</ListItem>
                     <ListItem>
-                      Create Verifyable Credentials{' '}
+                      Create Verifiable Credentials{' '}
                       <Link
                         fontSize="sm"
                         color="blue.500"
@@ -225,7 +225,7 @@ export default function Home() {
                       <ListItem>Recruiter Portal</ListItem>
                       <ListItem>oAuth2 Bridge</ListItem>
                       <ListItem>Unity Support</ListItem>
-                      <ListItem>Create Digital Verifyable Signatures</ListItem>
+                      <ListItem>Create Digital Verifiable Signatures</ListItem>
                       <ListItem>Chain Hub</ListItem>
                       <ListItem>Metaverse Connect</ListItem>
                       <ListItem>Custodian Signatures</ListItem>
