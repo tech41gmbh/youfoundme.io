@@ -56,7 +56,7 @@ export default function Developer() {
         <Text color="yellow.500">Dig in right away?</Text>
 
         <Text color="yellow.500">
-          You find ABI (we use Solidity) and Youfoundme Contracts at:{' '}
+          You find ABI (we use Solidity) and Youfoundme contracts at:{' '}
           <Link
             color="blue.500"
             href="https://github.com/tech41gmbh/yfm_contracts"
