@@ -65,7 +65,7 @@ export default function Developer() {
           </Link>
         </Text>
         <Text color="yellow.500">
-          Contract Avalanche Testnet FUJI:
+          Contract Avalanche Testnet FUJI:{' '}
           <Link
             color="blue.500"
             href="https://testnet.snowtrace.io/address/0xe83cA455C78fdc4Eac78444Da84cFb835A10ccA4"
