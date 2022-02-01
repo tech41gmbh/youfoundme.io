@@ -141,8 +141,8 @@ export default function Investor() {
           <Text color="red.500">{investorError}</Text>
           <br />
           or email us at:&nbsp;
-          <CLink href="mailto:mathias.dietrich@youfoundme.io" isExternal>
-            mathias.dietrich@youfoundme.io
+          <CLink href="mailto:invest@youfoundme.io" isExternal>
+            invest@youfoundme.io
           </CLink>
           <br />
           <br />
