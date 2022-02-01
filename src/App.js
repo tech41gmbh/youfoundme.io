@@ -122,7 +122,7 @@ export default function App() {
             left={windowsWidth / 4}
             fontSize="xl"
             color="white.100">
-            Using ƴoufoundme on mobile? =&gr;
+            Youfoundme on mobile? Read this...
           </CLink>
         </center>
       </Flex>
