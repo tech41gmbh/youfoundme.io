@@ -78,7 +78,7 @@ export default function Home() {
                   colorScheme="blue">
                   DApp MAINNET C-CHAIN
                 </Button>{' '}
-                (~$5.00)
+                (0.05 AVAX = ~$4.00)
               </Link>
               <Box padding="4" maxH="1xl"></Box>
               <Link href="https://testnet.youfoundme.io">
@@ -90,7 +90,12 @@ export default function Home() {
                   color="white.800">
                   DApp TEST NETWORK FUJI
                 </Button>{' '}
-                ($ 0.00)
+              </Link>
+              <Link
+                href="https://faucet.avax-test.network/"
+                color="blue.500"
+                isExternal>
+                (0 AVAX TEST FAUCET)
               </Link>
             </center>
             <br />
@@ -148,11 +153,11 @@ export default function Home() {
                     <br /> <br />
                     Your contact details are not visible on the public web or
                     blockchain. You control with whom you share your details.
-                    You use the connect button to link with another user for
-                    access.
+                    Use the connect button to link with another user to request
+                    access to contact details.
                     <br /> <br />
                     If you update your contact details permissioned users will
-                    automatically see the updated version. No more outdated
+                    automatically see the latest version. No more outdated
                     mobile numbers or email addresses!
                   </Text>
                 </Box>
@@ -171,7 +176,7 @@ export default function Home() {
                   borderRadius="md"
                   backgroundColor="blue.800">
                   <UnorderedList align="left" fontSize="2xl">
-                    <ListItem>Sign on without passwords</ListItem>
+                    <ListItem>Sign on without credentials</ListItem>
                     <ListItem>
                       Find like minded people for work and play
                     </ListItem>
