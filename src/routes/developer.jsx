@@ -53,6 +53,37 @@ export default function Developer() {
         <Heading>Developer</Heading>
         <br />
 
+        <Text color="yellow.500">Dig in right away?</Text>
+
+        <Text color="yellow.500">
+          You find ABI (we use Solidity) and Youfundme Contracts at:{' '}
+          <Link
+            color="blue.500"
+            href="https://github.com/tech41gmbh/yfm_contracts"
+            isExternal>
+            github
+          </Link>
+        </Text>
+        <Text color="yellow.500">
+          Contract Avalanche Testnet FUJI:
+          <Link
+            color="blue.500"
+            href="https://testnet.snowtrace.io/address/0xe83cA455C78fdc4Eac78444Da84cFb835A10ccA4"
+            isExternal>
+            0xe83cA455C78fdc4Eac78444Da84cFb835A10ccA4
+          </Link>
+        </Text>
+        <Text color="yellow.500">
+          Contract Avalanche Mainnet:{' '}
+          <Link
+            color="blue.500"
+            href="https://snowtrace.io/address/0x1A014C43a4A67e74449337bCC53220F9de9f7A13"
+            isExternal>
+            0x1A014C43a4A67e74449337bCC53220F9de9f7A13
+          </Link>
+        </Text>
+        <br />
+
         <Text>Coming soon:</Text>
         <br />
         <Container align="left">

@@ -143,7 +143,7 @@ export default function Home() {
                     contains your Decentralized Identity or DID identifier and
                     also guarantees your unique username. Your username serves
                     as an alias, no need to enter the DID code manually. You can
-                    also use query codes to share with your friends.
+                    also use QR codes to share with your friends.
                     <br /> <br />
                     Your contact details are not visible on the public web or
                     blockchain. You control with whom you share your details.
