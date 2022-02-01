@@ -122,12 +122,13 @@ export default function Home() {
             </Badge>
             <Box height="50px" />
             <iframe
+              id="Overlayvideo"
               width="680"
               height="500"
               src="https://www.youtube.com/embed/FZHMTbHqM_w"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <Box height="50px" />
             <Flex boxSize="2xl" align="left" bg="black.510" padding="0">
