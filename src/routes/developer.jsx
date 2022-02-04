@@ -68,18 +68,18 @@ export default function Developer() {
           Contract Avalanche Testnet FUJI:{' '}
           <Link
             color="blue.500"
-            href="https://testnet.snowtrace.io/address/0xe83cA455C78fdc4Eac78444Da84cFb835A10ccA4"
+            href="https://testnet.snowtrace.io/address/0x5C7A8476FF24A164cfEbb19290969C5B86FACFEE"
             isExternal>
-            0xe83cA455C78fdc4Eac78444Da84cFb835A10ccA4
+            0x5C7A8476FF24A164cfEbb19290969C5B86FACFEE
           </Link>
         </Text>
         <Text color="yellow.500">
           Contract Avalanche Mainnet:{' '}
           <Link
             color="blue.500"
-            href="https://snowtrace.io/address/0x1A014C43a4A67e74449337bCC53220F9de9f7A13"
+            href="https://snowtrace.io/address/0xbdF14F15ca0EeDA7eAa2BCE4af15567263c34291"
             isExternal>
-            0x1A014C43a4A67e74449337bCC53220F9de9f7A13
+            0xbdF14F15ca0EeDA7eAa2BCE4af15567263c34291
           </Link>
         </Text>
         <br />

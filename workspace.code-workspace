@@ -8,6 +8,9 @@
     },
     {
       "path": "../yfm_contracts"
+    },
+    {
+      "path": "../yfm_test"
     }
   ],
   "settings": {}
